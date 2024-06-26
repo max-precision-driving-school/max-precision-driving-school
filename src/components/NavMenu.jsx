@@ -4,9 +4,9 @@ import NavImg from '../assets/navbar-logo-2.svg';
 
 function NavMenu() {
 	const items = [
-		{ name: "Home", url: "#" },
-		{ name: "Lessons & Rates", url: "#" },
-		{ name: "Contact", url: "#" }
+		{ name: "Home", url: "/" },
+		{ name: "Lessons & Rates", url: "/rates" },
+		{ name: "Contact", url: "/contact" }
 	]
 	return (
 		<>
