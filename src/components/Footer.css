@@ -1,0 +1,17 @@
+.copyright-text { 
+    font-size: 13px; 
+    color: #FBE134;
+    background-color: #2A2E34;
+    /* min-height: 150px; */
+
+}
+
+.row-bg {
+    background-color: #fffdf7;
+    min-height: 200px;
+}
+
+
+.bord-right {
+    border-right: 1px solid #2A2E34;
+}

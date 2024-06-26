@@ -1,0 +1,12 @@
+.nav-bg {
+    background-color: #2A2E34;
+}
+
+.navbar-brand.text-color-yellow {
+    color: #FBE134;
+}
+
+.nav-logo img {
+    filter: invert(82%) sepia(34%) saturate(2700%) hue-rotate(360deg) brightness(106%) contrast(105%);
+    width: 250px;
+}

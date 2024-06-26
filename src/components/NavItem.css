@@ -1,0 +1,16 @@
+a.n-item {
+    color: #FBE134;
+    border: 1px solid #2A2E34;
+}
+
+a.n-item:active,
+a.n-item:focus,
+a.n-item:visited {
+    color: #C0C0C0;
+}
+a.n-item:hover {
+    border: 1px solid #FBE134;
+    background-color: #FBE134;
+    color: #000000;
+    border-radius: .25rem;
+}   
