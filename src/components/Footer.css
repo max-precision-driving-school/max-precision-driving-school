@@ -15,3 +15,9 @@
 .bord-right {
     border-right: 1px solid #2A2E34;
 }
+
+@media(max-width: 768px) {
+    .bord-right {
+        border-right: 0;
+    } 
+}

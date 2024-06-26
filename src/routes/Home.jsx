@@ -11,8 +11,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../components/Home.css'
 
 function Home() {
-	const [count, setCount] = useState(0)
-
 	return (
 		<>
 			<HeroBanner />
