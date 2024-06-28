@@ -1,1 +1,8 @@
 /* .coming-soon { max-height: 500px;} */
+
+.contact-bg {
+    background-image: url('/highway.jpg');
+    background-repeat: round;
+    opacity: 0.9;
+    height: 75vh;
+}
