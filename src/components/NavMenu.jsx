@@ -12,7 +12,7 @@ function NavMenu() {
 		<>
 			<div class="row nav-bg">
 				<div class="container-1200 m-auto">
-					<nav class="navbar navbar-expand-lg">
+					<nav class="navbar navbar-expand-lg py-3">
 						<div class="container-fluid">
 							<a class="navbar-brand text-color-yellow nav-logo" href="/">
 								<img src={NavImg} alt="driving school logo" />
