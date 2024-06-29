@@ -1,1 +1,14 @@
-/* .coming-soon { max-height: 500px;} */
+.lesson-options {
+    background-color: #2A2E34;
+    color: #E9EAEC;
+}
+
+.package-price {
+    font-size: 3rem;
+}
+
+.package:hover {
+    box-shadow: 0 0 50px rgb(255,215,0);
+}
+
+.instructor-img { max-height: 300px; }
