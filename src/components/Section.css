@@ -3,11 +3,6 @@
     background-color: #2A2E34;
 }
 
-.sec-img { 
-    height: 60px;
-    filter: invert(82%) sepia(34%) saturate(2700%) hue-rotate(360deg) brightness(106%) contrast(105%);
-}
-
 .sec-list-item {
     img { 
         height: 15px; margin-right: 5px; 
@@ -32,8 +27,12 @@
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateX(180deg);
+  .flip-card:hover,
+  .flip-card:active,
+  .flip-card:focus {
+    .flip-card-inner {
+      transform: rotateX(180deg);
+    }
   }
   
   /* Position the front and back side */

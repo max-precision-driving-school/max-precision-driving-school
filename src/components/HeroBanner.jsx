@@ -1,14 +1,21 @@
 import './HeroBanner.css';
 // import classes from './HeroBanner.module.css';
 // import HeroImg from '../assets/hero.jpg';
-import HeroImg from '../assets/hero-2.png';
+import HeroImg from '../assets/hero-desktop.png';
+import HeroImgMo from '../assets/hero-mobile.png';
 
 function HeroBanner() {
 
     return (
         <>
 			<div class="row">
-                    <img id="hero-img" class="img-fluid w-100 px-0 hero-img" src={HeroImg} alt="hero image"></img>
+                    <picture class="img-fluid w-100 px-0 hero-img">
+                        <source media="(min-width: 968px)" srcset={HeroImgMo}></source>
+                        <source media="(min-width: 767px)" srcset={HeroImg}></source>
+
+                        {/* <img id="hero-img" class="img-fluid w-100 px-0 hero-img" src={HeroImg} alt="hero image"></img> */}
+                        <img id="hero-img" class="img-fluid w-100 px-0 hero-img" src={HeroImgMo} alt="hero image"></img>
+                    </picture>
             </div>
         </>
     )

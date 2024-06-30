@@ -1,8 +1,9 @@
 import './Section.css';
-import idLogo from '../assets/id-card-regular.svg';
+import idCard from '../assets/id-card.png';
 import car from '../assets/car-tunnel-solid.svg';
-import road from '../assets/road-solid.svg';
+import road from '../assets/road.png';
 import check from '../assets/check-solid.svg';
+import racingCars from '../assets/racing-cars.png';
 
 function Section() {
     return (
@@ -14,12 +15,11 @@ function Section() {
                             <div class="card h-100 flip-card-inner">
                                 <div class="card-body text-center flip-card-front">
                                     <h5 class="card-title">Isn't it time yet?</h5>
-                                    <img src={idLogo} class="sec-img m-3"/>
-                                    <p class="card-text">To get that driver's license!</p>
+                                    <img src={idCard} class="sec-img m-3"/>
                                 </div>
-                                <div class="card-body text-center flip-card-back">
+                                <div class="card-body align-content-center text-center flip-card-back">
                                     <p class="card-text">
-                                        Whether it's to improve your quality of life, or help you get around with day to day tasks, getting that license can be easy!
+                                        Whether it's to improve your quality of life, or help you get around with day to day tasks, getting your license will be worth it!
                                     </p>
                                 </div>
                             </div>
@@ -28,12 +28,12 @@ function Section() {
                             <div class="card h-100 flip-card-inner">
                                 <div class="card-body text-center flip-card-front">
                                     <h5 class="card-title">There's nothing stopping you!</h5>
-                                    <img src={road} class="sec-img m-3"/>
-                                    <p class="card-text">I'll help you overcome your fear behind the wheel.</p>
+                                    <img src={racingCars} class="sec-img m-3"/>
                                 </div>
-                                <div class="card-body text-center flip-card-back">
+                                <div class="card-body align-content-center text-center flip-card-back">
                                     <p class="card-text">
-                                        I have over x years of experience as a driving instructor; helping hundreds of students get their license and will do the same for you!
+                                        I have over x years of experience as a driving instructor; helping hundreds of students get their license and will do the same for you.
+                                        I'll help you to overcome any fear behind the wheel.
                                     </p>
                                 </div>
                             </div>
@@ -42,10 +42,10 @@ function Section() {
                             <div class="card h-100 flip-card-inner">
                                 <div class="card-body text-center flip-card-front">
                                     <h5 class="card-title">What's included?</h5>
-                                    <img src={car} class="sec-img m-3"/>
+                                    <img src={road} class="sec-img m-3"/>
                                 </div>
 
-                                <div class="card-body text-center flip-card-back">
+                                <div class="card-body align-content-center text-center flip-card-back">
                                     <p class="card-text">Lessons will include:</p>
                                     <ul class="list-unstyled">
                                         <li class="sec-list-item"><img src={check} />Parallel Parking</li>
