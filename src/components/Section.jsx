@@ -8,6 +8,16 @@ import racingCars from '../assets/racing-cars.png';
 function Section() {
     return (
         <>
+            <div class="row row-bg">
+                <div class="container-1200 m-auto">
+                    <div class="row my-4">
+                        <h3>Why choose Max Precision Driving School?</h3>
+                        <p>We provide our students with a high quality learning experience.</p>
+                        <p>Our instructors are highly experienced in road etiquette and offer a positive and enlightening environment for all students, expecially for first time and nervous drivers.</p>
+                        <p>We offer the best rates in the neighborhood!</p>
+                    </div>
+                </div>
+            </div>
             <div class="row sec-bg">
                 <div class="container-1200 m-auto">
                     <div class="row my-5">

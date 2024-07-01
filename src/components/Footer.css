@@ -1,5 +1,5 @@
-.copyright-text { 
-    font-size: 13px; 
+.copyright-text {
+    font-size: 13px;
     color: #FBE134;
     background-color: #2A2E34;
     /* min-height: 150px; */
@@ -19,5 +19,18 @@
 @media(max-width: 768px) {
     .bord-right {
         border-right: 0;
-    } 
+    }
+}
+
+.footer-contact-icon {
+    height: 15px;
+}
+
+.footer-link {
+    color:#2A2E34;
+    text-decoration: none;
+}
+
+.footer-link:active, .footer-link:focus {
+    color:#2A2E34;
 }

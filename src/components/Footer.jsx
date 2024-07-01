@@ -1,4 +1,7 @@
 import './Footer.css';
+import location from '../assets/location-dot-solid.svg';
+import phone from '../assets/phone-solid.svg';
+import email from '../assets/envelope-solid.svg';
 
 function Footer() {
     return(
@@ -8,16 +11,22 @@ function Footer() {
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="fs-6 fw-bold my-3 bord-right">
-                                Max Precision Driving School<br />
-                                Certified Driving Instructor<br />
-                                917-939-6379
+                                Max Precision Driving School
                             </p>
                         </div>
                         <div class="col-12 col-md-8">
                             <p class="fs-6 my-3">
-                                Send me an email if you have any questions or concerns<br />
-                                jarengirao@gmail.com<br />
+                                <img class="footer-contact-icon px-3" src={location}></img>
+                                22-55 31st Suite UL6 2nd Floor Astoria, NY 11105
                             </p>
+                            <a href="tel:9179396379" class="fs-6 my-3 footer-link">
+                                <img class="footer-contact-icon px-3" src={phone}></img>
+                                (917)-939-6379
+                            </a>
+                            <a href="mailto:jarengirao@gmail.com" class="fs-6 my-3 d-block footer-link">
+                                <img class="footer-contact-icon px-3" src={email}></img>
+                                jarengirao@gmail.com
+                            </a>
                         </div>
                     </div>
                 </div>
