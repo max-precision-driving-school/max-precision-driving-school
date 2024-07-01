@@ -10,7 +10,7 @@ function Footer() {
                 <div class="container-1200 m-auto">
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <p class="fs-6 fw-bold my-3 bord-right">
+                            <p class="fs-6 fw-bold my-3 py-3 bord-right">
                                 Max Precision Driving School
                             </p>
                         </div>
