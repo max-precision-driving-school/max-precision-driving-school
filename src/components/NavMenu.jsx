@@ -1,6 +1,7 @@
 import './NavMenu.css';
 import NavItem from "./NavItem";
 import NavImg from '../assets/navbar-logo-2.svg';
+// import NavLogo from '../assets/maxplogo.svg';
 import NavLogo from '../assets/maxplogo.png';
 
 function NavMenu() {
