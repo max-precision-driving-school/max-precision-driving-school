@@ -40,7 +40,7 @@ function Rates() {
             </div>
             <div class="row row-bg">
                 <div class="container-1200 m-auto">
-                    <div class="row">
+                    <div class="row py-3 py-md-0">
                         <div class="col-12 col-sm-4">
                             <p>Single session 45 minutes <span class="pt-serif-bold">$50</span></p>
                             <p>Single session 90 minutes <span class="pt-serif-bold">$100</span></p>
@@ -151,7 +151,7 @@ function Rates() {
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-5">
+                    <div class="row mt-5 mb-3">
                         <div class="col-12 my-2">
                             <h3 class="">Special Packages</h3>
                         </div>

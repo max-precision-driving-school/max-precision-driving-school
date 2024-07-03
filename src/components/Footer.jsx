@@ -9,24 +9,32 @@ function Footer() {
             <div class="row row-bg">
                 <div class="container-1200 m-auto">
                     <div class="row">
-                        <div class="col-12 col-md-4">
-                            <p class="fs-6 fw-bold my-3 py-3 bord-right">
+                        <div class="col-12 col-md-4 my-2 bord-right">
+                            <p class="fs-6 fw-bold">
                                 Max Precision Driving School
                             </p>
                         </div>
-                        <div class="col-12 col-md-8">
-                            <p class="fs-6 my-3">
-                                <img class="footer-contact-icon px-3" src={location}></img>
-                                22-55 31st Suite UL6 2nd Floor Astoria, NY 11105
+                        <div class="col-12 col-md-8 my-2">
+                            <p class="mb-3">
+                                <img class="footer-contact-icon pe-3" src={location}></img>
+                                <span class="footer-link">
+                                    22-55 31st Suite UL6 2nd Floor Astoria, NY 11105
+                                </span>
                             </p>
-                            <a href="tel:9179396379" class="fs-6 my-3 footer-link">
-                                <img class="footer-contact-icon px-3" src={phone}></img>
-                                (917)-939-6379
-                            </a>
-                            <a href="mailto:jarengirao@gmail.com" class="fs-6 my-3 d-block footer-link">
-                                <img class="footer-contact-icon px-3" src={email}></img>
-                                jarengirao@gmail.com
-                            </a>
+                            
+                            <p class="fs-6 my-3">
+                                <img class="footer-contact-icon pe-3" src={phone}></img>
+                                <a href="tel:9179396379" class="footer-link">
+                                    (917)-939-6379
+                                </a>
+                            </p>
+                            
+                            <p class="fs-6 my-3">
+                                <img class="footer-contact-icon pe-3" src={email}></img>
+                                <a href="mailto:jarengirao@gmail.com" class="footer-link">
+                                    jarengirao@gmail.com
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>

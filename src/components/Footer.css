@@ -29,8 +29,12 @@
 .footer-link {
     color:#2A2E34;
     text-decoration: none;
+    font-size: 14px;
 }
 
-.footer-link:active, .footer-link:focus {
-    color:#2A2E34;
+a.footer-link:active,
+a.footer-link:focus,
+a.footer-link:hover
+ {
+    color:#2C94F3;
 }
