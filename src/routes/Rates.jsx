@@ -12,7 +12,7 @@ function Rates() {
                 </div>
             </div>
 
-            <div class="row lesson-options">
+            <div class="row">
                 <div class="container-1200 m-auto">
                     <div class="row mb-4">
                         <div class="col-12 col-md-6">
@@ -30,7 +30,7 @@ function Rates() {
                 </div>
             </div>
 
-            <div class="row lesson-options-2">
+            <div class="row ind-prices-section">
                 <div class="container-1200 m-auto">
                     <div class="row my-4">
                         <div class="col-12 my-2 text-center">
