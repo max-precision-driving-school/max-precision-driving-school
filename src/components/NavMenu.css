@@ -6,12 +6,6 @@
     color: #FBE134;
 }
 
-.nav-logo img {
-    /* filter: invert(82%) sepia(34%) saturate(2700%) hue-rotate(360deg) brightness(106%) contrast(105%); */
-    /* width: 250px; */
-    height: 70px;
-}
-
 .navbar button.navbar-toggler.nav-yellow {
    border: 2px solid #FBE134;
    background-color: #FBE134;
