@@ -1,7 +1,6 @@
 .contact-bg {
-    background-image: url('/highway.jpg');
-    background-repeat: round;
-    opacity: 0.9;
+    background: linear-gradient(to right, #868f96 0%, #596164 100%);
+    /* opacity: 0.9; */
     color: #000000;
 }
 
