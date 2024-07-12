@@ -1,4 +1,10 @@
-.lesson-options {
+.gold-text { color: gold; }
+.lesson-optioins {
+    background-color: #2A2E34;
+    color: #E9EAEC;
+}
+
+.lesson-options-2 {
     background-color: #2A2E34;
     color: #E9EAEC;
 }
@@ -11,4 +17,15 @@
     box-shadow: 0 0 50px rgb(255,215,0);
 }
 
-.instructor-img { max-height: 300px; }
+.instructor-img { max-height: 200px; }
+.popular-text { 
+    color: gold;
+    border: 1px solid #2A2E34;
+    background-color: #2A2E34;
+}
+
+
+.specialized { 
+    color: white;
+    background-color: #2A2E34;
+}
