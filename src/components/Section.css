@@ -12,6 +12,7 @@
 
 
 .choose-img {
-  /* filter: invert(84%) sepia(12%) saturate(5525%) hue-rotate(1deg) brightness(104%) contrast(106%); */
-  filter: invert(78%) sepia(69%) saturate(515%) hue-rotate(80deg) brightness(92%) contrast(88%);
+  filter: invert(84%) sepia(12%) saturate(5525%) hue-rotate(1deg) brightness(104%) contrast(106%);
+  /* filter: invert(78%) sepia(69%) saturate(515%) hue-rotate(80deg) brightness(92%) contrast(88%); */
+  height: 100px;
 }

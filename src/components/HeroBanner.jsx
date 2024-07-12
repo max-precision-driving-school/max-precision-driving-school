@@ -8,14 +8,19 @@ function HeroBanner() {
 
     return (
         <>
-			<div class="row">
-                    <picture class="img-fluid w-100 px-0 hero-img">
+			<div class="row hero-bg">
+            <div class="container-1200 m-auto">
+                <div class="row">
+
+                    <picture class="img-fluid hero-img">
                         <source media="(min-width: 968px)" srcset={HeroImgMo}></source>
                         <source media="(min-width: 767px)" srcset={HeroImg}></source>
 
                         {/* <img id="hero-img" class="img-fluid w-100 px-0 hero-img" src={HeroImg} alt="hero image"></img> */}
                         <img id="hero-img" class="img-fluid w-100 px-0 hero-img" src={HeroImgMo} alt="hero image"></img>
                     </picture>
+                </div>
+            </div>
             </div>
         </>
     )

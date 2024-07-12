@@ -8,7 +8,7 @@ function Footer() {
         <>
             <div class="row row-bg">
                 <div class="container-1200 m-auto">
-                    <div class="row">
+                    <div class="row my-3">
                         <div class="col-12 col-md-4 my-2 bord-right">
                             <p class="fs-6 fw-bold">
                                 Max Precision Driving School
@@ -26,13 +26,6 @@ function Footer() {
                                 <img class="footer-contact-icon pe-3" src={phone}></img>
                                 <a href="tel:9179396379" class="footer-link">
                                     (917)-939-6379
-                                </a>
-                            </p>
-                            
-                            <p class="fs-6 my-3">
-                                <img class="footer-contact-icon pe-3" src={email}></img>
-                                <a href="mailto:jarengirao@gmail.com" class="footer-link">
-                                    jarengirao@gmail.com
                                 </a>
                             </p>
                         </div>

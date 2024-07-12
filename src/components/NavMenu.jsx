@@ -1,20 +1,20 @@
 import './NavMenu.css';
 import NavItem from "./NavItem";
-import NavImg from '../assets/navbar-logo-2.svg';
-// import NavLogo from '../assets/maxplogo.svg';
-import NavLogo from '../assets/maxplogo.png';
+// import NavLogo from '../assets/maxplogo-v2-1.png';
+import NavLogo from '../assets/maxplogo-v2.png';
 
 function NavMenu() {
 	const items = [
 		{ name: "Home", url: "/" },
 		{ name: "Lessons & Rates", url: "/rates" },
+		{ name: "5 Hour Class", url: "/5-hour-class" },
 		{ name: "Contact", url: "/contact" }
 	]
 	return (
 		<>
 			<div class="row nav-bg">
 				<div class="container-1200 m-auto">
-					<nav class="navbar navbar-expand-lg">
+					<nav class="my-3 navbar navbar-expand-lg">
 						<div class="container-fluid">
 							<a class="navbar-brand text-color-yellow nav-logo" href="/">
 								<img src={NavLogo} alt="driving school logo" />
