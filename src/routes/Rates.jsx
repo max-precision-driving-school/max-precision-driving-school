@@ -33,7 +33,7 @@ function Rates() {
             <div class="row ind-prices-section">
                 <div class="container-1200 m-auto">
                     <div class="row my-4">
-                        <div class="col-12 my-2 text-center">
+                        <div class="col-12 my-4 text-center">
                             <h3 class="pt-serif-bold-italic">Individual Prices</h3>
                         </div>
                         <div class="col-12 col-sm-4">
@@ -56,13 +56,13 @@ function Rates() {
             <div class="row">
                 <div class="container-1200 m-auto">
                     <div class="row my-4">
-                        <div class="col-12 my-2 text-center">
+                        <div class="col-12 my-4 text-center">
                             <h3 class="pt-serif-bold-italic">Base Packages</h3>
                         </div>
                         <div class="col-12 col-sm-6 col-md-4 mb-3 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-regular">Package #1</h3>
+                                    <h3 class="card-title pt-serif-bold">Package #1</h3>
                                     <p class="card-text pt-serif-bold package-price">$595</p>
                                     <ul class="list-unstyled">
                                         <li class="my-2">10 lessons of 45 minutes(given in 5 sessions of 90 minutes)</li>
@@ -75,7 +75,8 @@ function Rates() {
                         <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-3 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-regular">Package #2</h3>
+                                    <h3 class="card-title pt-serif-bold">Package #2</h3>
+                                    <small class="rounded-5 p-2 popular-text"><b>Most Popular</b></small>
                                     <p class="card-text pt-serif-bold package-price">$695</p>
                                     <ul class="list-unstyled">
                                         <li class="my-2">12 lessons of 45 minutes (given in 6 sessions of 90 minutes)</li>
@@ -88,7 +89,7 @@ function Rates() {
                         <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-3 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-regular">Package #3</h3>
+                                    <h3 class="card-title pt-serif-bold">Package #3</h3>
                                     <p class="card-text pt-serif-bold package-price">$790</p>
                                     <ul class="list-unstyled">
                                         <li class="my-2">14 lessons of 45 minutes(given in 7 sessions of 90 minutes)</li>
@@ -105,13 +106,13 @@ function Rates() {
             <div class="row specialized">
                 <div class="container-1200 m-auto">
                     <div class="row my-4">
-                        <div class="col-12 my-2 text-center">
+                        <div class="col-12 my-4 text-center">
                             <h3 class="pt-serif-bold-italic">Specialized Packages</h3>
                         </div>
                         <div class="col-12 col-sm-6 col-md-4 mb-3 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-regular">Beginner Package</h3>
+                                    <h3 class="card-title pt-serif-bold">Package #4</h3>
                                     <p class="card-text pt-serif-bold package-price">$890</p>
                                     <ul class="list-unstyled">
                                         <li class="my-2">16 lessons of 45 minutes(given in 8 sessions of 90 minutes)</li>
@@ -124,8 +125,7 @@ function Rates() {
                         <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-3 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-regular">Junior Package</h3>
-                                    <small class="rounded-5 p-2 popular-text"><b>Most Popular</b></small>
+                                    <h3 class="card-title pt-serif-bold">Package #5</h3>
                                     <p class="card-text pt-serif-bold package-price">$1590</p>
                                     <ul class="list-unstyled">
                                         <li class="my-2">30 lessons of 45 minutes(given in 15 sessions of 90 minutes)</li>
@@ -140,7 +140,7 @@ function Rates() {
                         <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-3 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-regular">Junior Package #2</h3>
+                                    <h3 class="card-title pt-serif-bold">Package #6</h3>
                                     <p class="card-text pt-serif-bold package-price">$1095</p>
                                     <ul class="list-unstyled">
                                         <li class="my-2">20 lessons of 45 minutes (given in 10 sessions of 90 minutes)</li>
@@ -158,14 +158,14 @@ function Rates() {
 
             <div class="row">
                 <div class="container-1200 m-auto">
-                    <div class="row my-4">
-                        <div class="col-12 my-2 text-center">
+                    <div class="row my-4 d-flex justify-content-evenly">
+                        <div class="col-12 my-4 text-center">
                             <h3 class="pt-serif-bold-italic">Special Packages</h3>
                         </div>
                         <div class="col-12 col-sm-6 col-md-4 mb-3 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-regular">S1</h3>
+                                    <h3 class="card-title pt-serif-bold">Package #7</h3>
                                     <p class="card-text pt-serif-bold package-price">$440</p>
                                     <ul class="list-unstyled">
                                         <li class="my-2">6 lessons of 45 minutes(given in 3 sessions of 90 minutes)</li>
@@ -178,20 +178,7 @@ function Rates() {
                         <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-3 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-regular">S2</h3>
-                                    <p class="card-text pt-serif-bold package-price">$540</p>
-                                    <ul class="list-unstyled">
-                                        <li class="my-2">8 lessons of 45 minutes (given in 4 sessions of 90 minutes)</li>
-                                        <li class="my-2">Road Test appointment</li>
-                                        <li class="my-2">Car for road test</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-3 mb-md-0">
-                            <div class="card h-100">
-                                <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-regular">S3</h3>
+                                    <h3 class="card-title pt-serif-bold">Package #8</h3>
                                     <p class="card-text pt-serif-bold package-price">$240</p>
                                     <ul class="list-unstyled">
                                         <li class="my-2">1 lesson of 90 minutes</li>
