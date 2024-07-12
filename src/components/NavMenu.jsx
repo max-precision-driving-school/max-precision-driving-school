@@ -8,6 +8,7 @@ function NavMenu() {
 	const items = [
 		{ name: "Home", url: "/" },
 		{ name: "Lessons & Rates", url: "/rates" },
+		{ name: "5 Hour Class", url: "/5-hour-class" },
 		{ name: "Contact", url: "/contact" }
 	]
 	return (

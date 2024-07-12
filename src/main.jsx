@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './index.css'
 
 import Rates from './routes/Rates.jsx'
+import FiveHrClass from './routes/FiveHrClass.jsx'
 import Contact from './routes/Contact.jsx'
 import RootLayout from './routes/RootLayout.jsx'
 
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
     children: [
       { path: '/', element: <Home />},
       { path: '/rates', element: <Rates />},
+      { path: '/5-hour-class', element: <FiveHrClass />},
       { path: '/contact', element: <Contact />}
   ]},
 ]);
