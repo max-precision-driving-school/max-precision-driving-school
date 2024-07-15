@@ -1,11 +1,17 @@
 .contact-bg {
-    background-image: url('/highway.jpg');
-    background-repeat: round;
-    opacity: 0.9;
+    background: linear-gradient(to right, #70777D 0%, #404749 100%);
+    /* opacity: 0.9; */
     color: #000000;
 }
 
 .contact-bg > div {
     background-color: #FFFFFF;
     background: rgba(204, 204, 204, 0.8);
+}
+
+.mta {
+    color: #000000;
+    background-color: yellow;
+    padding: 6px 8px;
+    border-radius: 50%;
 }
