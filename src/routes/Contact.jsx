@@ -29,7 +29,7 @@ function Contact() {
                 </div>
             </div>
 
-            <div class="row contact-bg p-5">
+            <div class="row contact-bg py-5">
                 <div class="rounded col-12 col-lg-6 offset-lg-3 py-3">
                     <p class="fw-bold">Don't hesitate to reach out for any questions or concerns</p>
                     <form onSubmit={sendEmail}>
