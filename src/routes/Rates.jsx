@@ -125,7 +125,7 @@ function Rates() {
                         <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-4 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold">Junior Package</h3>
+                                    <h3 class="card-title pt-serif-bold">Junior Package #1</h3>
                                     <p class="card-text pt-serif-bold package-price">$1590</p>
                                     <ul class="list-unstyled">
                                         <li class="my-2">30 lessons of 45 minutes(given in 15 sessions of 90 minutes)</li>
