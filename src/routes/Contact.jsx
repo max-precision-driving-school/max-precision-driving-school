@@ -30,8 +30,8 @@ function Contact() {
             </div>
 
             <div class="row contact-bg p-5">
-                <div class="rounded col-12 col-md-10 col-lg-6 offset-md-1 offset-lg-3 py-3">
-                    <p class="fw-bold">Don't hesitate to reach out for any questions or concerns!</p>
+                <div class="rounded col-12 col-lg-6 offset-lg-3 py-3">
+                    <p class="fw-bold">Don't hesitate to reach out for any questions or concerns</p>
                     <form onSubmit={sendEmail}>
                         <div class="form-group mb-4">
                             <label for="name" class="form-label fw-bold">Name</label>
@@ -51,6 +51,21 @@ function Contact() {
                         </div>
                         <button type="submit" class="btn btn-dark float-end">Submit</button>
                     </form>
+                </div>
+                <div class="mt-4 py-3 rounded col-12 col-lg-6 offset-lg-3">
+                    <div>
+                        <h3 class="mb-3">Our Office</h3>
+                        <p>Accessible by <span class="mta"><strong>N</strong></span> <span class="mta"><strong>W</strong></span> trains - Astoria-Ditmars Blvd Station</p>
+                        <p>Accessible by <strong>Q69</strong> Bus - Ditmars Blvd/31 St</p>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.412974852342!2d-73.91691351375026!3d40.77493425998999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f67fc0bb721%3A0x3f8e2a638c8eccb!2s22-55%2031st%20St%2C%20Astoria%2C%20NY%2011105!5e0!3m2!1sen!2sus!4v1721047617804!5m2!1sen!2sus"
+                        width="100%"
+                        height="350"
+                        style={{border: 0}}
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                 </div>
             </div>
         </>
