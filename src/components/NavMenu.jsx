@@ -5,10 +5,10 @@ import NavLogo from '../assets/maxplogo-v2.png';
 
 function NavMenu() {
 	const items = [
-		{ name: "Home", url: "/" },
-		{ name: "Lessons & Rates", url: "/rates" },
-		{ name: "5 Hour Class", url: "/5-hour-class" },
-		{ name: "Contact", url: "/contact" }
+		{ id: "nav-1", name: "Home", url: "/" },
+		{ id: "nav-2", name: "Lessons & Rates", url: "/rates" },
+		{ id: "nav-3", name: "5 Hour Class", url: "/5-hour-class" },
+		{ id: "nav-4", name: "Contact", url: "/contact" }
 	]
 	return (
 		<>
@@ -25,7 +25,7 @@ function NavMenu() {
 
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
-								{items.map( (i)=> <NavItem name={i.name} url={i.url}/> )}
+								{items.map( (i)=> <NavItem key={i.id} name={i.name} url={i.url}/> )}
 							</ul>
 							</div>
 						</div>
