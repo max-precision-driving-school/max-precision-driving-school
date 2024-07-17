@@ -14,18 +14,13 @@
 }
 
 .instructor-img { max-height: 250px; }
-.popular-text, .pill-text { 
+.popular-text {
     color: gold;
     border: 1px solid #2A2E34;
     background-color: #2A2E34;
 }
 
-.popular-text {
-    color: #FFF;
-}
-
-
-.specialized { 
+.specialized {
     color: white;
     background-color: #2A2E34;
 }

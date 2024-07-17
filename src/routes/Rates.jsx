@@ -120,7 +120,7 @@ function Rates() {
                         <div key={bp.id} class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold rounded-5 p-2 pill-text">{bp.title}</h3>
+                                    <h3 class="card-title pt-serif-bold rounded-5 p-2">{bp.title}</h3>
                                     { bp.popular &&
                                         <small class="rounded-5 p-2 popular-text"><b>Most Popular</b></small>
                                     }
@@ -150,7 +150,7 @@ function Rates() {
                         <div key={spz.id} class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold rounded-5 p-2 pill-text">{spz.title}</h3>
+                                    <h3 class="card-title pt-serif-bold rounded-5 p-2">{spz.title}</h3>
                                     <p class="card-text pt-serif-bold package-price">{spz.price}</p>
                                     <ul class="list-unstyled">
                                         { spz.details.map( (d) =>
@@ -179,7 +179,7 @@ function Rates() {
                         <div key={sp.id} class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold rounded-5 p-2 pill-text">{sp.title}</h3>
+                                    <h3 class="card-title pt-serif-bold rounded-5 p-2">{sp.title}</h3>
                                     <p class="card-text pt-serif-bold package-price">{sp.price}</p>
                                     <ul class="list-unstyled">
                                         { sp.details.map( (d) =>

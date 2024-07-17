@@ -4,9 +4,9 @@ import Section from '../components/Section';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../components/Home.css'
 
-import quality from '../assets/quality-2.png';
-import mission from '../assets/mission-3.png';
-import value from '../assets/value-3.png';
+import quality from '../assets/quality-3.png';
+import mission from '../assets/mission-2.png';
+import value from '../assets/value-1.png';
 
 function Home() {
 	const sections = [

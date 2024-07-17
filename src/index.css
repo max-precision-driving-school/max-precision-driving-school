@@ -24,9 +24,9 @@ body {
   background-color: #E9EAEC;
 }
 
-a { 
+a {
   text-decoration: none;
-  color: #2A2E34; 
+  color: #2A2E34;
 }
 
 a:hover {
@@ -55,4 +55,8 @@ a:hover {
   font-family: "PT Serif", serif;
   font-weight: 700;
   font-style: italic;
+}
+
+.mp-dark-bg {
+  background-color: #2A2E34;
 }
