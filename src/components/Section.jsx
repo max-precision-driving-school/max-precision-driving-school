@@ -12,7 +12,7 @@ function Section({sections}) {
                             <div class="card h-100 p-3">
                                 <div class="text-center">
                                     <h5 class="my-2 pt-serif-bold">{s.title}</h5>
-                                    <img src={s.img} alt="quality check" class="my-3 choose-img"/>
+                                    <img src={s.img} alt={s.alt} className={s.cname} />
                                 </div>
                                 <div class="text-center">
                                     {s.text.map( (item) =>

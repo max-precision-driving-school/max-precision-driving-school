@@ -3,12 +3,12 @@ import './Rates.css';
 
 function Rates() {
     const basePackages = [
-        {id: "bp1", title: "Package #1", popular: false, price: "$595", details: [
+        {id: "bp1", title: "Package #1", popular: true, price: "$595", details: [
             "10 lessons of 45 minutes(given in 5 sessions of 90 minutes)",
             "Road Test appointment",
             "Car for road test"
         ]},
-        {id: "bp2", title: "Package #2", popular: true, price: "$695", details: [
+        {id: "bp2", title: "Package #2", popular: false, price: "$695", details: [
             "12 lessons of 45 minutes (given in 6 sessions of 90 minutes)",
             "Road Test appointment",
             "Car for road test"
@@ -52,7 +52,8 @@ function Rates() {
             "1 lesson of 90 minutes",
             "* For experienced drivers",
             "Road Test appointment",
-            "Car for road test"
+            "Car for road test",
+            "* No pickup (with pickup $255)"
         ]}
     ];
 
@@ -99,7 +100,7 @@ function Rates() {
                         <div class="col-12 col-sm-4">
                             <p>Road test appointment <span class="pt-serif-bold gold-text fs-5">$20</span></p>
                             <p>Car rental for for road test <span class="pt-serif-bold gold-text fs-5">$120</span></p>
-                            <p>Highway lesson <span class="pt-serif-bold gold-text fs-5">$125</span></p>
+                            <p>Highway lesson (90 minutes) <span class="pt-serif-bold gold-text fs-5">$125</span></p>
                         </div>
                         <div class="col-12 col-sm-4">
                             <p>Car rental for Road Test & 45 minute warm-up practice <span class="pt-serif-bold gold-text fs-5">$170</span></p>
@@ -119,7 +120,7 @@ function Rates() {
                         <div key={bp.id} class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold">{bp.title}</h3>
+                                    <h3 class="card-title pt-serif-bold rounded-5 p-2 pill-text">{bp.title}</h3>
                                     { bp.popular &&
                                         <small class="rounded-5 p-2 popular-text"><b>Most Popular</b></small>
                                     }
@@ -149,7 +150,7 @@ function Rates() {
                         <div key={spz.id} class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold">{spz.title}</h3>
+                                    <h3 class="card-title pt-serif-bold rounded-5 p-2 pill-text">{spz.title}</h3>
                                     <p class="card-text pt-serif-bold package-price">{spz.price}</p>
                                     <ul class="list-unstyled">
                                         { spz.details.map( (d) =>
@@ -178,7 +179,7 @@ function Rates() {
                         <div key={sp.id} class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold">{sp.title}</h3>
+                                    <h3 class="card-title pt-serif-bold rounded-5 p-2 pill-text">{sp.title}</h3>
                                     <p class="card-text pt-serif-bold package-price">{sp.price}</p>
                                     <ul class="list-unstyled">
                                         { sp.details.map( (d) =>
