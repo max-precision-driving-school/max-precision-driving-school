@@ -14,7 +14,11 @@ function Footer() {
                                 Max Precision Driving School
                             </p>
                         </div>
-                        <div class="col-12 col-md-8 my-2">
+                        <div class="col-12 col-md-4 my-2 text-center bord-right">
+                            <p class="fs-6 fw-bold">Important Links</p>
+                            <a href="/">Refund Policy</a>
+                        </div>
+                        <div class="col-12 col-md-4 my-2">
                             <p class="mb-3">
                                 <img class="footer-contact-icon pe-3" src={location}></img>
                                 <span class="footer-link">

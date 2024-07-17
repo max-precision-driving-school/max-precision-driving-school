@@ -2,6 +2,62 @@ import instructorImg from '../assets/instructor.jpg';
 import './Rates.css';
 
 function Rates() {
+    const basePackages = [
+        {id: "bp1", title: "Package #1", popular: true, price: "$595", details: [
+            "10 lessons of 45 minutes(given in 5 sessions of 90 minutes)",
+            "Road Test appointment",
+            "Car for road test"
+        ]},
+        {id: "bp2", title: "Package #2", popular: false, price: "$695", details: [
+            "12 lessons of 45 minutes (given in 6 sessions of 90 minutes)",
+            "Road Test appointment",
+            "Car for road test"
+        ]},
+        {id: "bp3", title: "Package #3", popular: false, price: "$790", details: [
+            "14 lessons of 45 minutes(given in 7 sessions of 90 minutes)",
+            "Road Test appointment",
+            "Car for road test"
+        ]}
+    ];
+
+    const specializedPackages = [
+        {id: "spz1", title: "Beginner Package", popular: false, price: "$890", details: [
+            "16 lessons of 45 minutes(given in 8 sessions of 90 minutes)",
+            "Road Test appointment",
+            "Car for road test"
+        ]},
+        {id: "spz2", title: "Junior Package #1", popular: false, price: "$1590", details: [
+            "30 lessons of 45 minutes(given in 15 sessions of 90 minutes)",
+            "* Recommended for ages 16 & 17",
+            "Free pickup within the area",
+            "Road Test appointment",
+            "Car for road test"
+        ]},
+        {id: "spz3", title: "Junior Package #2", popular: false, price: "$1095", details: [
+            "20 lessons of 45 minutes (given in 10 sessions of 90 minutes)",
+            "* Recommended for ages 16 & 17",
+            "Free pickup within the area",
+            "Road Test appointment",
+            "Car for road test"
+        ]}
+    ];
+
+    const specialPackages = [
+        {id: "sp1", title: "Package #4", popular: false, price: "$440", details: [
+            "6 lessons of 45 minutes(given in 3 sessions of 90 minutes)",
+            "Road Test appointment",
+            "Car for road test"
+        ]},
+        {id: "sp2", title: "Package #5", popular: false, price: "$240", details: [
+            "1 lesson of 90 minutes",
+            "* For experienced drivers",
+            "Road Test appointment",
+            "Car for road test",
+            "* No pickup (with pickup $255)"
+        ]}
+    ];
+
+
     return (
         <>
             <div class="row py-4">
@@ -44,7 +100,7 @@ function Rates() {
                         <div class="col-12 col-sm-4">
                             <p>Road test appointment <span class="pt-serif-bold gold-text fs-5">$20</span></p>
                             <p>Car rental for for road test <span class="pt-serif-bold gold-text fs-5">$120</span></p>
-                            <p>Highway lesson <span class="pt-serif-bold gold-text fs-5">$125</span></p>
+                            <p>Highway lesson (90 minutes) <span class="pt-serif-bold gold-text fs-5">$125</span></p>
                         </div>
                         <div class="col-12 col-sm-4">
                             <p>Car rental for Road Test & 45 minute warm-up practice <span class="pt-serif-bold gold-text fs-5">$170</span></p>
@@ -59,46 +115,26 @@ function Rates() {
                         <div class="col-12 my-4 text-center">
                             <h3 class="pt-serif-bold-italic">Base Packages</h3>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+
+                        { basePackages.map( (bp) =>
+                        <div key={bp.id} class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold">Package #1</h3>
-                                    <p class="card-text pt-serif-bold package-price">$595</p>
+                                    <h3 class="card-title pt-serif-bold rounded-5 p-2 pill-text">{bp.title}</h3>
+                                    { bp.popular &&
+                                        <small class="rounded-5 p-2 popular-text"><b>Most Popular</b></small>
+                                    }
+                                    <p class="card-text pt-serif-bold package-price">{bp.price}</p>
                                     <ul class="list-unstyled">
-                                        <li class="my-2">10 lessons of 45 minutes(given in 5 sessions of 90 minutes)</li>
-                                        <li class="my-2">Road Test appointment</li>
-                                        <li class="my-2">Car for road test</li>
+                                        {bp.details.map( (d) =>
+                                            <li key={d.toString()} class="my-2">{d}</li>
+                                        )}
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-4 mb-md-0">
-                            <div class="card h-100">
-                                <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold">Package #2</h3>
-                                    <small class="rounded-5 p-2 popular-text"><b>Most Popular</b></small>
-                                    <p class="card-text pt-serif-bold package-price">$695</p>
-                                    <ul class="list-unstyled">
-                                        <li class="my-2">12 lessons of 45 minutes (given in 6 sessions of 90 minutes)</li>
-                                        <li class="my-2">Road Test appointment</li>
-                                        <li class="my-2">Car for road test</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-md-0">
-                            <div class="card h-100">
-                                <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold">Package #3</h3>
-                                    <p class="card-text pt-serif-bold package-price">$790</p>
-                                    <ul class="list-unstyled">
-                                        <li class="my-2">14 lessons of 45 minutes(given in 7 sessions of 90 minutes)</li>
-                                        <li class="my-2">Road Test appointment</li>
-                                        <li class="my-2">Car for road test</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        )}
+
                     </div>
                 </div>
             </div>
@@ -109,49 +145,25 @@ function Rates() {
                         <div class="col-12 my-4 text-center">
                             <h3 class="pt-serif-bold-italic">Specialized Packages</h3>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+
+                        { specializedPackages.map( (spz) =>
+                        <div key={spz.id} class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold">Beginner Package</h3>
-                                    <p class="card-text pt-serif-bold package-price">$890</p>
+                                    <h3 class="card-title pt-serif-bold rounded-5 p-2 pill-text">{spz.title}</h3>
+                                    <p class="card-text pt-serif-bold package-price">{spz.price}</p>
                                     <ul class="list-unstyled">
-                                        <li class="my-2">16 lessons of 45 minutes(given in 8 sessions of 90 minutes)</li>
-                                        <li class="my-2">Road Test appointment</li>
-                                        <li class="my-2">Car for road test</li>
+                                        { spz.details.map( (d) =>
+                                            <li key={d.toString()} class="my-2">
+                                                { d.includes('*') ? <i>{d}</i> : d }
+                                            </li>
+                                        )}
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-4 mb-md-0">
-                            <div class="card h-100">
-                                <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold">Junior Package #1</h3>
-                                    <p class="card-text pt-serif-bold package-price">$1590</p>
-                                    <ul class="list-unstyled">
-                                        <li class="my-2">30 lessons of 45 minutes(given in 15 sessions of 90 minutes)</li>
-                                        <li class="my-2"><i>* Recommended for ages 16 & 17</i></li>
-                                        <li class="my-2">Free pickup within the area</li>
-                                        <li class="my-2">Road Test appointment</li>
-                                        <li class="my-2">Car for road test</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-md-0">
-                            <div class="card h-100">
-                                <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold">Junior Package #2</h3>
-                                    <p class="card-text pt-serif-bold package-price">$1095</p>
-                                    <ul class="list-unstyled">
-                                        <li class="my-2">20 lessons of 45 minutes (given in 10 sessions of 90 minutes)</li>
-                                        <li class="my-2"><i>* Recommended for ages 16 & 17</i></li>
-                                        <li class="my-2">Free pickup within the area</li>
-                                        <li class="my-2">Road Test appointment</li>
-                                        <li class="my-2">Car for road test</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        )}
+
                     </div>
                 </div>
             </div>
@@ -162,33 +174,25 @@ function Rates() {
                         <div class="col-12 my-4 text-center">
                             <h3 class="pt-serif-bold-italic">Special Packages</h3>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+
+                        { specialPackages.map( (sp) =>
+                        <div key={sp.id} class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                             <div class="card h-100">
                                 <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold">Package #4</h3>
-                                    <p class="card-text pt-serif-bold package-price">$440</p>
+                                    <h3 class="card-title pt-serif-bold rounded-5 p-2 pill-text">{sp.title}</h3>
+                                    <p class="card-text pt-serif-bold package-price">{sp.price}</p>
                                     <ul class="list-unstyled">
-                                        <li class="my-2">6 lessons of 45 minutes(given in 3 sessions of 90 minutes)</li>
-                                        <li class="my-2">Road Test appointment</li>
-                                        <li class="my-2">Car for road test</li>
+                                        { sp.details.map( (d) =>
+                                            <li key={d.toString()} class="my-2">
+                                                { d.includes('*') ? <b>{d}</b> : d }
+                                            </li>
+                                        )}
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-md-0">
-                            <div class="card h-100">
-                                <div class="card-body text-center package">
-                                    <h3 class="card-title pt-serif-bold">Package #5</h3>
-                                    <p class="card-text pt-serif-bold package-price">$240</p>
-                                    <ul class="list-unstyled">
-                                        <li class="my-2">1 lesson of 90 minutes</li>
-                                        <li class="my-2"><strong>For experienced drivers</strong></li>
-                                        <li class="my-2">Road Test appointment</li>
-                                        <li class="my-2">Car for road test</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        )}
+
                     </div>
                 </div>
             </div>

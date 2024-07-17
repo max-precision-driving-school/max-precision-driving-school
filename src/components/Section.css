@@ -12,7 +12,19 @@
 
 
 .choose-img {
-  filter: invert(84%) sepia(12%) saturate(5525%) hue-rotate(1deg) brightness(104%) contrast(106%);
+  /* filter: invert(84%) sepia(12%) saturate(5525%) hue-rotate(1deg) brightness(104%) contrast(106%); */
   /* filter: invert(78%) sepia(69%) saturate(515%) hue-rotate(80deg) brightness(92%) contrast(88%); */
   height: 100px;
+}
+
+.choose-img.value {
+    filter: invert(66%) sepia(63%) saturate(1024%) hue-rotate(0deg) brightness(106%) contrast(105%);
+}
+
+.choose-img.mission {
+    filter: invert(21%) sepia(1%) saturate(0%) hue-rotate(41deg) brightness(93%) contrast(98%);
+}
+
+.choose-img.quality {
+    filter: invert(53%) sepia(55%) saturate(655%) hue-rotate(100deg) brightness(92%) contrast(86%);
 }
