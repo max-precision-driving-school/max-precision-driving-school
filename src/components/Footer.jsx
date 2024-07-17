@@ -14,7 +14,7 @@ function Footer() {
                                 Max Precision Driving School
                             </p>
                         </div>
-                        <div class="col-12 col-md-4 my-2 text-center bord-right">
+                        <div class="col-12 col-md-4 my-2 mb-3 mb-md-0 text-md-center bord-right">
                             <p class="fs-6 fw-bold">Important Links</p>
                             <a href="/">Refund Policy</a>
                         </div>
