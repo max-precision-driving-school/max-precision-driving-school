@@ -2,8 +2,6 @@
     font-size: 13px;
     color: #FBE134;
     background-color: #2A2E34;
-    /* min-height: 150px; */
-
 }
 
 .row-bg {
@@ -35,6 +33,12 @@
 a.footer-link:active,
 a.footer-link:focus,
 a.footer-link:hover
- {
+{
     color:#2C94F3;
+}
+
+.important-links a:active,
+.important-links a:focus,
+.important-links a:hover {
+    color: #7D7A7A;
 }

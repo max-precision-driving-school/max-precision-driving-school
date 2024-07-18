@@ -14,9 +14,9 @@ function Footer() {
                                 Max Precision Driving School
                             </p>
                         </div>
-                        <div class="col-12 col-md-4 my-2 mb-3 mb-md-0 text-md-center bord-right">
+                        <div class="col-12 col-md-4 my-2 mb-3 mb-md-0 text-md-center bord-right important-links">
                             <p class="fs-6 fw-bold">Important Links</p>
-                            <a href="/">Refund Policy</a>
+                            <a href="/refund-policy">Refund Policy</a>
                         </div>
                         <div class="col-12 col-md-4 my-2">
                             <p class="mb-3">
@@ -25,7 +25,7 @@ function Footer() {
                                     22-55 31st Suite UL6 2nd Floor Astoria, NY 11105
                                 </span>
                             </p>
-                            
+
                             <p class="fs-6 my-3">
                                 <img class="footer-contact-icon pe-3" src={phone}></img>
                                 <a href="tel:9179396379" class="footer-link">

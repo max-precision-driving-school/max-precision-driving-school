@@ -29,10 +29,6 @@ a {
   color: #2A2E34;
 }
 
-a:hover {
-  color: gold;
-}
-
 .pt-serif-regular {
   font-family: "PT Serif", serif;
   font-weight: 400;
