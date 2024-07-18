@@ -21,7 +21,7 @@ function FiveHrClass() {
                     <div class="row">
                         <div class="col-12 my-4">
                             <h4 class="pt-serif-regular text-white">
-                                The 5 hour pre-licensing course speech lecture and film that is manditory to take for first-time license applicants.
+                                The 5 hour pre-licensing course speech lecture and film that is mandatory to take for first-time license applicants.
                             </h4>
                         </div>
                         <div class="col-12 my-3 d-flex justify-content-center">
