@@ -53,7 +53,7 @@ function Rates() {
             "* For experienced drivers",
             "Road Test appointment",
             "Car for road test",
-            "* No pickup (with pickup $255)"
+            "* No pickup (with pickup in the area $255)"
         ]}
     ];
 

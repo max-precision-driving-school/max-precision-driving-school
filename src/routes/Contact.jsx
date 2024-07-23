@@ -5,9 +5,12 @@ function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('gmail', 'xxx', e.target, {
-            publicKey: 'xxxx',
-        })
+        emailjs.sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            e.target,
+            import.meta.env.VITE_EMAILJS_PUB_KEY,
+        )
         .then(
             () => {
                 console.log('SUCCESS!');
