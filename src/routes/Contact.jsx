@@ -1,25 +1,34 @@
 import './Contact.css';
+import { useState, useEffect } from 'react';
+import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 
 function Contact() {
-    const sendEmail = (e) => {
-        e.preventDefault();
+    const [ formSubmitted, setFormSubmission ] = useState(false);
 
-        emailjs.sendForm(
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+
+    const sendEmail = (formData) => {
+        // console.log(formData);
+        // console.log(errors);
+
+        emailjs.send(
             import.meta.env.VITE_EMAILJS_SERVICE_ID,
             import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-            e.target,
+            formData,
             import.meta.env.VITE_EMAILJS_PUB_KEY,
         )
         .then(
             () => {
                 console.log('SUCCESS!');
+                setFormSubmission(true);
+                // console.log(formSubmissionSuccessful);
             },
             (error) => {
                 console.log('FAILED...', error.text);
             },
         );
-        e.target.reset();
+        reset();
     };
 
     return (
@@ -33,29 +42,106 @@ function Contact() {
             </div>
 
             <div class="row contact-bg py-5">
-                <div class="rounded col-12 col-lg-6 offset-lg-3 py-3">
-                    <p class="fw-bold">Don't hesitate to reach out for any questions or concerns</p>
-                    <form onSubmit={sendEmail}>
+                <div class="rounded col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 py-3">
+                    <p class="fw-bold">Don't hesitate to reach out for any questions or concerns
+                        <small class="d-block text-danger">* Indicates required field</small>
+                    </p>
+                    <form onSubmit={ handleSubmit(sendEmail) }>
                         <div class="form-group mb-4">
-                            <label for="name" class="form-label fw-bold">Name</label>
-                            <input type="text" class="form-control" id="name" name="name"/>
+                            <label for="name" class="form-label fw-bold">Name<span class="text-danger">*</span></label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                placeholder="name"
+                                name="name" {...register('name', { required: "Name is required" })}
+                                aria-invalid={errors.name ? "true" : "false"}
+                            />
+                            {
+                                errors.name?.type === 'required' && (
+                                    <span class="badge bg-danger">{errors.name.message}</span>
+                                )
+                            }
                         </div>
                         <div class="form-group mb-4">
-                            <label for="email" class="form-label fw-bold">Email</label>
-                            <input type="email"  class="form-control" id="email" placeholder="email@example.com" name="email"/>
+                            <label for="email" class="form-label fw-bold">Email<span class="text-danger">*</span></label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                placeholder="email@example.com"
+                                name="email" {...register('email', { required: "Email is required" })}
+                                aria-invalid={errors.email ? "true" : "false"}
+                            />
+                            {
+                                errors.email?.type === 'required' && (
+                                    <span class="badge bg-danger">{errors.email.message}</span>
+                                )
+                            }
                         </div>
                         <div class="form-group mb-4">
                             <label for="phone-number" class="form-label fw-bold">Phone Number</label>
-                            <input type="phone-number"  class="form-control" id="phone-number" name="phone"/>
+                            <input
+                                type="phone-number"
+                                class="form-control"
+                                id="phone-number"
+                                placeholder="###-###-####"
+                                name="phone" {...register('phone', {
+                                    pattern: {
+                                        value: /^(\d{10})|(\d{3}-\d{3}-\d{4})$/,
+                                        message: "Invalid format"
+                                    }
+                                })}
+                                aria-invalid={errors.phone ? "true" : "false"}
+                            />
+                            {
+                                errors.phone?.type === 'pattern' && (
+                                    <span class="badge bg-danger">{errors.phone.message}</span>
+                                )
+                            }
                         </div>
                         <div class="form-group mb-4">
-                            <label for="message" class="form-label fw-bold">Message</label>
-                            <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+                            <label for="content" class="form-label fw-bold">Message<span class="text-danger">*</span></label>
+                            <textarea
+                                class="form-control"
+                                id="content" rows="3"
+                                placeholder="message"
+                                name="content" {...register('content', {
+                                    required: "Message is required",
+                                    minLength: {
+                                        value: 10,
+                                        message: "Invalid length"
+                                    }
+                                })}
+                                aria-invalid={errors.content ? "true" : "false"}
+                            />
+                            {
+                                errors.content?.type === 'required' && (
+                                    <span class="badge bg-danger">{errors.content.message}</span>
+                                )
+                            }
+                            {
+                                errors.content?.type === 'minLength' && (
+                                    <span class="badge bg-danger">{errors.content.message}</span>
+                                )
+                            }
                         </div>
-                        <button type="submit" class="btn btn-dark float-end">Submit</button>
+                        <div class="form-group d-flex justify-content-end mb-2">
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </div>
                     </form>
+                        {
+                            formSubmitted == true && (
+                                <div>
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        Message sent! We will contact you soon with a response.
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            )
+                        }
                 </div>
-                <div class="mt-4 py-3 rounded col-12 col-lg-6 offset-lg-3">
+                <div class="mt-4 py-3 rounded col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
                     <div>
                         <h3 class="mb-3">Our Office</h3>
                         <p>Accessible by <span class="mta"><strong>N</strong></span> <span class="mta"><strong>W</strong></span> trains - Astoria-Ditmars Blvd Station</p>
