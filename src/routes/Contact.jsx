@@ -1,13 +1,16 @@
 import './Contact.css';
+import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 
 function Contact() {
+    const [ formSubmitted, setFormSubmission ] = useState(false);
+
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const sendEmail = (formData) => {
-        console.log(formData);
-        console.log(errors);
+        // console.log(formData);
+        // console.log(errors);
 
         emailjs.send(
             import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -18,6 +21,8 @@ function Contact() {
         .then(
             () => {
                 console.log('SUCCESS!');
+                setFormSubmission(true);
+                // console.log(formSubmissionSuccessful);
             },
             (error) => {
                 console.log('FAILED...', error.text);
@@ -121,8 +126,20 @@ function Contact() {
                                 )
                             }
                         </div>
-                        <button type="submit" class="btn btn-dark float-end">Submit</button>
+                        <div class="form-group d-flex justify-content-end mb-2">
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </div>
                     </form>
+                        {
+                            formSubmitted == true && (
+                                <div>
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        Message sent! We will contact you soon with a response.
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            )
+                        }
                 </div>
                 <div class="mt-4 py-3 rounded col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
                     <div>
