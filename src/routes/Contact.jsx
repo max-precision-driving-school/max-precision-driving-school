@@ -38,15 +38,17 @@ function Contact() {
 
             <div class="row contact-bg py-5">
                 <div class="rounded col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 py-3">
-                    <p class="fw-bold">Don't hesitate to reach out for any questions or concerns</p>
+                    <p class="fw-bold">Don't hesitate to reach out for any questions or concerns
+                        <small class="d-block text-danger">* Indicates required field</small>
+                    </p>
                     <form onSubmit={ handleSubmit(sendEmail) }>
                         <div class="form-group mb-4">
-                            <label for="name" class="form-label fw-bold">Name*</label>
+                            <label for="name" class="form-label fw-bold">Name<span class="text-danger">*</span></label>
                             <input
                                 type="text"
                                 class="form-control"
                                 id="name"
-                                placeholder="John Smith"
+                                placeholder="name"
                                 name="name" {...register('name', { required: "Name is required" })}
                                 aria-invalid={errors.name ? "true" : "false"}
                             />
@@ -57,7 +59,7 @@ function Contact() {
                             }
                         </div>
                         <div class="form-group mb-4">
-                            <label for="email" class="form-label fw-bold">Email*</label>
+                            <label for="email" class="form-label fw-bold">Email<span class="text-danger">*</span></label>
                             <input
                                 type="email"
                                 class="form-control"
@@ -94,7 +96,7 @@ function Contact() {
                             }
                         </div>
                         <div class="form-group mb-4">
-                            <label for="content" class="form-label fw-bold">Message*</label>
+                            <label for="content" class="form-label fw-bold">Message<span class="text-danger">*</span></label>
                             <textarea
                                 class="form-control"
                                 id="content" rows="3"
