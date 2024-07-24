@@ -3,21 +3,16 @@ import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 
 function Contact() {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
-    const onSubmit = (data) => {
-        debugger;
-        console.log(data);
-    }
+    const sendEmail = (formData) => {
+        console.log(formData);
+        console.log(errors);
 
-    console.log(errors);
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm(
+        emailjs.send(
             import.meta.env.VITE_EMAILJS_SERVICE_ID,
             import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-            e.target,
+            formData,
             import.meta.env.VITE_EMAILJS_PUB_KEY,
         )
         .then(
@@ -28,7 +23,7 @@ function Contact() {
                 console.log('FAILED...', error.text);
             },
         );
-        e.target.reset();
+        reset();
     };
 
     return (
@@ -44,14 +39,14 @@ function Contact() {
             <div class="row contact-bg py-5">
                 <div class="rounded col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 py-3">
                     <p class="fw-bold">Don't hesitate to reach out for any questions or concerns</p>
-                    <form onSubmit={ handleSubmit(onSubmit) }>
+                    <form onSubmit={ handleSubmit(sendEmail) }>
                         <div class="form-group mb-4">
-                            <label for="name" class="form-label fw-bold">Name</label>
+                            <label for="name" class="form-label fw-bold">Name*</label>
                             <input
                                 type="text"
                                 class="form-control"
-                                placeholder="name"
                                 id="name"
+                                placeholder="John Smith"
                                 name="name" {...register('name', { required: "Name is required" })}
                                 aria-invalid={errors.name ? "true" : "false"}
                             />
@@ -62,7 +57,7 @@ function Contact() {
                             }
                         </div>
                         <div class="form-group mb-4">
-                            <label for="email" class="form-label fw-bold">Email</label>
+                            <label for="email" class="form-label fw-bold">Email*</label>
                             <input
                                 type="email"
                                 class="form-control"
@@ -84,38 +79,43 @@ function Contact() {
                                 class="form-control"
                                 id="phone-number"
                                 placeholder="###-###-####"
-                                name="phone" {...register('phoneNumber', {
-                                    required: "Phone number is required",
+                                name="phone" {...register('phone', {
                                     pattern: {
                                         value: /^(\d{10})|(\d{3}-\d{3}-\d{4})$/,
                                         message: "Invalid format"
                                     }
                                 })}
-                                aria-invalid={errors.phoneNumber ? "true" : "false"}
+                                aria-invalid={errors.phone ? "true" : "false"}
                             />
                             {
-                                errors.phoneNumber?.type === 'required' && (
-                                    <span class="badge bg-danger">{errors.phoneNumber.message}</span>
-                                )
-                            }
-                            {
-                                errors.phoneNumber?.type === 'pattern' && (
-                                    <span class="badge bg-danger">{errors.phoneNumber.message}</span>
+                                errors.phone?.type === 'pattern' && (
+                                    <span class="badge bg-danger">{errors.phone.message}</span>
                                 )
                             }
                         </div>
                         <div class="form-group mb-4">
-                            <label for="message" class="form-label fw-bold">Message</label>
+                            <label for="content" class="form-label fw-bold">Message*</label>
                             <textarea
                                 class="form-control"
-                                id="message" rows="3"
+                                id="content" rows="3"
                                 placeholder="message"
-                                name="message" {...register('messageContent', { required: "Message is required" })}
-                                aria-invalid={errors.messageContent ? "true" : "false"}
+                                name="content" {...register('content', {
+                                    required: "Message is required",
+                                    minLength: {
+                                        value: 10,
+                                        message: "Invalid length"
+                                    }
+                                })}
+                                aria-invalid={errors.content ? "true" : "false"}
                             />
                             {
-                                errors.messageContent?.type === 'required' && (
-                                    <span class="badge bg-danger">{errors.messageContent.message}</span>
+                                errors.content?.type === 'required' && (
+                                    <span class="badge bg-danger">{errors.content.message}</span>
+                                )
+                            }
+                            {
+                                errors.content?.type === 'minLength' && (
+                                    <span class="badge bg-danger">{errors.content.message}</span>
                                 )
                             }
                         </div>
