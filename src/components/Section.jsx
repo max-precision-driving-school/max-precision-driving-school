@@ -1,4 +1,5 @@
 import './Section.css';
+import threePointTurn from '../assets/3pt-turn.mp4';
 
 function Section({sections}) {
     return (
@@ -6,7 +7,7 @@ function Section({sections}) {
             <div class="row sec-bg">
                 <div class="container-1200 m-auto">
                     <h3 class="my-5 text-center pt-serif-bold-italic">Why Max Precision Driving School?</h3>
-                    <div class="row my-4">
+                    <div class="row my-5">
                         { sections.map( (s) =>
                         <div key={s.id} class="col-12 mb-4 mb-md-0 col-md-4">
                             <div class="card h-100 p-3">
@@ -24,6 +25,19 @@ function Section({sections}) {
                             </div>
                         </div>
                         )}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row video-bg">
+                <div class="container-1200 m-auto">
+                    <div class="row">
+                        <div class="col-12 text-center my-5 video-parent-container">
+                            <video width="640" height="100%" controls>
+                                <source src={threePointTurn} type="video/mp4"></source>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>
