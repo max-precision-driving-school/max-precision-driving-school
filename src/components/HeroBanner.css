@@ -17,7 +17,7 @@
     inset: 0;
     z-index: -1;
     background-image:  url("../assets/asphalt-road.png");
-    background-size: cover;
+    background-size: contain;
     opacity: 0.7;
 }
 
