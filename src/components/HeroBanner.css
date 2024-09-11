@@ -3,5 +3,32 @@
 }
 
 .hero-bg {
-    background-color: #2A2E34;
+    /* background-color: #2A2E34; */
+}
+
+.hero-bg {
+    position: relative;
+}
+
+.hero-bg::before {
+    content: "";
+    /* position: relative; */
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image:  url("../assets/asphalt-road.png");
+    background-size: cover;
+    opacity: 0.7;
+}
+
+@media (max-width: 767px)  {
+    #hero-img {
+        height: 475px;
+    }
+}
+
+@media (max-width: 575px)  {
+    #hero-img {
+        height: 300px;
+    }
 }
