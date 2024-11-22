@@ -1,4 +1,3 @@
 .five-hr-image {
-    height: 250px;
+    max-height: 450px;
 }
-

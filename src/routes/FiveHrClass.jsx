@@ -1,6 +1,7 @@
 import './FiveHrClass.css';
 import classroom from '../assets/classroom.jpg'
-import carParked from '../assets/car-parked.jpg'
+// import carParked from '../assets/car-parked.jpg'
+import carParked from '../assets/5hr-v3.jpeg'
 
 function FiveHrClass() {
     return (
