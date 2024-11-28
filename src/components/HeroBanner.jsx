@@ -10,14 +10,14 @@ function HeroBanner() {
 
     return (
         <>
-			<div class="row py-3 py-sm-5 hero-bg">
-                <div class="container-1200 m-auto">
-                    <div class="row">
-                        <picture class="img-fluid hero-img">
-                            <source media="(min-width: 968px)" srcset={HeroImg}></source>
-                            <source media="(min-width: 767px)" srcset={HeroImgMo}></source>
+			<div className="row py-3 py-sm-5 hero-bg">
+                <div className="container-1200 m-auto">
+                    <div className="row">
+                        <picture className="img-fluid hero-img">
+                            <source media="(min-width: 968px)" srcSet={HeroImg}></source>
+                            <source media="(min-width: 767px)" srcSet={HeroImgMo}></source>
 
-                            <img id="hero-img" class="img-fluid w-100 px-0 hero-img" src={HeroImg} alt="hero image"></img>
+                            <img id="hero-img" className="img-fluid w-100 px-0 hero-img" src={HeroImg} alt="hero image"></img>
                         </picture>
                     </div>
                 </div>
