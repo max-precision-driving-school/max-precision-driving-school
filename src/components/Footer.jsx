@@ -28,8 +28,8 @@ function Footer() {
 
                             <p class="fs-6 my-3">
                                 <img class="footer-contact-icon pe-3" src={phone}></img>
-                                <a href="tel:3476085449" class="footer-link">
-                                    (347)-608-5449
+                                <a href="tel:9177348361" class="footer-link">
+                                    (917)-734-8361
                                 </a>
                             </p>
                         </div>
