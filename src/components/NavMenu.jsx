@@ -12,19 +12,19 @@ function NavMenu() {
 	]
 	return (
 		<>
-			<div class="row nav-bg">
-				<div class="container-1200 m-auto">
-					<nav class="my-3 navbar navbar-expand-lg">
-						<div class="container-fluid">
-							<a class="navbar-brand text-color-yellow nav-logo" href="/">
+			<div className="row nav-bg">
+				<div className="container-1200 m-auto">
+					<nav className="my-3 navbar navbar-expand-lg">
+						<div className="container-fluid">
+							<a className="navbar-brand text-color-yellow nav-logo" href="/">
 								<img src={NavLogo} alt="driving school logo" />
 							</a>
-							<button class="navbar-toggler nav-yellow" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
+							<button className="navbar-toggler nav-yellow" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span className="navbar-toggler-icon"></span>
 							</button>
 
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
+							<div className="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
 								{items.map( (i)=> <NavItem key={i.id} name={i.name} url={i.url}/> )}
 							</ul>
 							</div>

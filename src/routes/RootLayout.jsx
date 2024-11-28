@@ -10,7 +10,7 @@ function RootLayout() {
 
     return (
         <>
-			<div class="container-fluid">
+			<div className="container-fluid">
 				<NavMenu />
                 <Outlet />
 				<Footer />
