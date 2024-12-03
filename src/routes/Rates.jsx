@@ -33,7 +33,7 @@ function Rates() {
             "Road Test appointment",
             "Car for road test"
         ]},
-        {id: "spz3", title: "Junior Package #2", popular: false, price: "$1095", details: [
+        {id: "spz3", title: "Junior Package #2", popular: false, price: "$1090", details: [
             "20 lessons of 45 minutes (given in 10 sessions of 90 minutes)",
             "* Recommended for ages 16 & 17",
             "Free pickup within the area",
