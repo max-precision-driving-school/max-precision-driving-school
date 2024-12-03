@@ -3,6 +3,10 @@
     background-color: #2A2E34;
 }
 
+.sec-bg .card:hover {
+    box-shadow: 0 0 50px gold;
+}
+
 .sec-list-item {
     img {
         height: 15px; margin-right: 5px;
