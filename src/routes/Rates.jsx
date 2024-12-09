@@ -4,17 +4,17 @@ import './Rates.css';
 function Rates() {
     const basePackages = [
         {id: "bp1", title: "Package #1", popular: true, price: "$595", details: [
-            "10 lessons of 45 minutes(given in 5 sessions of 90 minutes)",
+            "10 lessons of 45 minutes(given in 5 sessions of 90 minutes each)",
             "Road Test appointment",
             "Car for road test"
         ]},
         {id: "bp2", title: "Package #2", popular: false, price: "$695", details: [
-            "12 lessons of 45 minutes (given in 6 sessions of 90 minutes)",
+            "12 lessons of 45 minutes (given in 6 sessions of 90 minutes each)",
             "Road Test appointment",
             "Car for road test"
         ]},
         {id: "bp3", title: "Package #3", popular: false, price: "$790", details: [
-            "14 lessons of 45 minutes(given in 7 sessions of 90 minutes)",
+            "14 lessons of 45 minutes(given in 7 sessions of 90 minutes each)",
             "Road Test appointment",
             "Car for road test"
         ]}
@@ -22,19 +22,19 @@ function Rates() {
 
     const specializedPackages = [
         {id: "spz1", title: "Beginner Package", popular: false, price: "$890", details: [
-            "16 lessons of 45 minutes(given in 8 sessions of 90 minutes)",
+            "16 lessons of 45 minutes(given in 8 sessions of 90 minutes each)",
             "Road Test appointment",
             "Car for road test"
         ]},
         {id: "spz2", title: "Junior Package #1", popular: false, price: "$1590", details: [
-            "30 lessons of 45 minutes(given in 15 sessions of 90 minutes)",
+            "30 lessons of 45 minutes(given in 15 sessions of 90 minutes each)",
             "* Recommended for ages 16 & 17",
             "Free pickup within the area",
             "Road Test appointment",
             "Car for road test"
         ]},
         {id: "spz3", title: "Junior Package #2", popular: false, price: "$1090", details: [
-            "20 lessons of 45 minutes (given in 10 sessions of 90 minutes)",
+            "20 lessons of 45 minutes (given in 10 sessions of 90 minutes each)",
             "* Recommended for ages 16 & 17",
             "Free pickup within the area",
             "Road Test appointment",
@@ -44,7 +44,7 @@ function Rates() {
 
     const specialPackages = [
         {id: "sp1", title: "Package #4", popular: false, price: "$440", details: [
-            "6 lessons of 45 minutes(given in 3 sessions of 90 minutes)",
+            "6 lessons of 45 minutes(given in 3 sessions of 90 minutes each)",
             "Road Test appointment",
             "Car for road test"
         ]},

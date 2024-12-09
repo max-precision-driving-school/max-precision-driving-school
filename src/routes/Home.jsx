@@ -15,7 +15,7 @@ function Home() {
 			{ id: "1b", t: "Our instructors are fluent in English and Spanish!"}
 		]},
 		{id: 2, title: "Our Mission", img: mission, alt: "our mission logo", cname: "m-2 choose-img mission", text: [
-			{ id: "2a", t: "Our instructors are highly experienced in road etiquette and offer a positive and enlightening environment for all students, expecially for first time and nervous drivers." },
+			{ id: "2a", t: "Our instructors are highly experienced in road etiquette and offer a positive and enlightening environment for all students, especially for first time and nervous drivers." },
 			{ id: "2b", t: "Students will learn how to execute basic maneuvers such as parallel parking and executing 3 point turn with max precision." }
 		]},
 		{id: 3, title: "Value", img: value, alt: "value logo", cname: "m-2 choose-img value", text: [
