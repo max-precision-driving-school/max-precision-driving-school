@@ -1,3 +1,4 @@
+import Meta from '../components/Meta';
 import HeroBanner from '../components/HeroBanner';
 import Section from '../components/Section';
 
@@ -25,6 +26,9 @@ function Home() {
 	]
 	return (
 		<>
+		 	<Meta
+				title="Max Precision Driving School"
+			/>
 			<HeroBanner />
 			<Section sections={sections}/>
 		</>
