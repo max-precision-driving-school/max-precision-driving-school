@@ -35,7 +35,7 @@ function Contact() {
 	return (
 		<>
 		 	<Meta
-				title="Contact Use | Max Precision Driving School "
+				title="Contact Us | Max Precision Driving School "
 				description="Let us help you drive with confidence and max precision."
 			/>
 			<div className="row py-4">
