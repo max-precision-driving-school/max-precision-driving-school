@@ -1,7 +1,12 @@
+import Meta from '../components/Meta';
+
 function RefundPolicy() {
     return (
         <>
-
+		 	<Meta
+				title="Refund Policy| Max Precision Driving School "
+				description="Lessons should be cancelled within 24 hours of the appointed time (business days, not including weekends) ..."
+			/>
             <div className="row py-4 refund-policy">
                 <div className="container-1200 m-auto">
                     <div className="col-12">
