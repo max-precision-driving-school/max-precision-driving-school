@@ -42,7 +42,7 @@ function FiveHrClass() {
 					<div className="row">
 						<div className="col-12 col-sm-6 d-flex align-items-center">
 							<p className="pt-serif-regular fs-5">
-								Every non-license applicant must take this course in order to recieve a certificate under MV-278, which will be asked for when taking the road test.
+								Every non-license applicant must take this course in order to receive a certificate under MV-278, which will be asked for when taking the road test.
 							</p>
 						</div>
 						<div className="col-12 col-sm-6 d-flex justify-content-center">
