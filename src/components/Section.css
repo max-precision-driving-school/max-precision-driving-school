@@ -19,19 +19,9 @@
   height: 100px;
 }
 
-/* .video-bg {
-    position: relative;
+.video-parent-container video {
+    background-color: #2a2e34;
 }
-
-.video-bg::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background-image:  url("../assets/asphalt-road.png");
-    background-size: cover;
-    opacity: 0.8;
-} */
 
 @media (max-width: 700px) {
     .video-bg video {
