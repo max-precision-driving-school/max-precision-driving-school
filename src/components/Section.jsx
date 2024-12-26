@@ -34,7 +34,7 @@ function Section({sections}) {
                     <div className="row">
                         <div className="col-12 text-center my-5 video-parent-container">
                             <video width="640" height="100%" controls>
-                                <source type="video/mp4"></source>
+                                <source src={threePointTurn} type="video/mp4"></source>
                                 Your browser does not support the video tag.
                             </video>
                         </div>
