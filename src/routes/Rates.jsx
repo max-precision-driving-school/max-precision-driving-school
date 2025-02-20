@@ -96,17 +96,15 @@ function Rates() {
 							<h3 className="pt-serif-bold-italic">Individual Prices</h3>
 						</div>
 						<div className="col-12 col-sm-4 text-center text-sm-start">
-							<p>Single session 45 minutes <span className="pt-serif-bold gold-text fs-5">$50</span></p>
-							<p>Single session 90 minutes <span className="pt-serif-bold gold-text fs-5">$100</span></p>
+							<p>1 driving lesson (90 minutes) <span className="pt-serif-bold gold-text fs-5">$100</span></p>
 							<p className="pb-4 pb-sm-0">5 Hour Pre-Licensing Class <span className="pt-serif-bold gold-text fs-5">$65</span></p>
 						</div>
 						<div className="col-12 col-sm-4 text-center text-sm-start">
 							<p>Road test appointment <span className="pt-serif-bold gold-text fs-5">$30</span></p>
 							<p>Car rental for for road test <span className="pt-serif-bold gold-text fs-5">$150</span></p>
-							<p className="pb-4 pb-sm-0">Highway lesson (90 minutes) <span className="pt-serif-bold gold-text fs-5">$120</span></p>
 						</div>
 						<div className="col-12 col-sm-4 text-center text-sm-start">
-							<p>Car rental for Road Test & 45 minute warm-up practice <span className="pt-serif-bold gold-text fs-5">$200</span></p>
+							<p className="pb-4 pb-sm-0">Highway lesson (90 minutes) <span className="pt-serif-bold gold-text fs-5">$120</span></p>
 						</div>
 					</div>
 				</div>
