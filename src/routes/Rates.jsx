@@ -4,58 +4,56 @@ import './Rates.css';
 
 function Rates() {
 	const basePackages = [
-		{id: "bp1", title: "Package #1", popular: true, price: "$595", details: [
+		{id: "bp1", title: "Package #1", popular: true, price: "$670", details: [
 			"10 lessons of 45 minutes(given in 5 sessions of 90 minutes each)",
-			"Road Test appointment",
+			"5 Hour Pre-Licensing Class",
+			"Road test appointment",
 			"Car for road test"
 		]},
-		{id: "bp2", title: "Package #2", popular: false, price: "$695", details: [
+		{id: "bp2", title: "Package #2", popular: false, price: "$760", details: [
 			"12 lessons of 45 minutes (given in 6 sessions of 90 minutes each)",
+			"5 Hour Pre-Licensing Class",
 			"Road Test appointment",
 			"Car for road test"
 		]},
-		{id: "bp3", title: "Package #3", popular: false, price: "$790", details: [
+		{id: "bp3", title: "Package #3", popular: false, price: "$850", details: [
 			"14 lessons of 45 minutes(given in 7 sessions of 90 minutes each)",
-			"Road Test appointment",
+			"5 Hour Pre-Licensing Class",
+			"Road test appointment",
 			"Car for road test"
-		]}
+		]},
+		{id: "bp4", title: "Package #4", popular: false, price: "$940", details: [
+			"16 lessons of 45 minutes(given in 8 sessions of 90 minutes each)",
+			"5 Hour Pre-Licensing Class",
+			"Road test appointment",
+			"Car for road test"
+		]},
+		
 	];
 
 	const specializedPackages = [
-		{id: "spz1", title: "Beginner Package", popular: false, price: "$890", details: [
-			"16 lessons of 45 minutes(given in 8 sessions of 90 minutes each)",
-			"Road Test appointment",
-			"Car for road test"
-		]},
-		{id: "spz2", title: "Junior Package #1", popular: false, price: "$1590", details: [
-			"30 lessons of 45 minutes(given in 15 sessions of 90 minutes each)",
-			"* Recommended for ages 16 & 17",
-			"Free pickup within the area",
-			"Road Test appointment",
-			"Car for road test"
-		]},
-		{id: "spz3", title: "Junior Package #2", popular: false, price: "$1090", details: [
-			"20 lessons of 45 minutes (given in 10 sessions of 90 minutes each)",
-			"* Recommended for ages 16 & 17",
-			"Free pickup within the area",
-			"Road Test appointment",
+		{id: "spz1", title: "Beginner Package", popular: false, price: "$1080", details: [
+			"20 lessons of 45 minutes(given in 10 sessions of 90 minutes each)",
+			"5 Hour Pre-Licensing Class",
+			"Road test appointment",
 			"Car for road test"
 		]}
 	];
 
 	const specialPackages = [
-		{id: "sp1", title: "Package #4", popular: false, price: "$440", details: [
+		{ id: "sp1", title: "Package #5", popular: false, price: "$490", details: [
 			"6 lessons of 45 minutes(given in 3 sessions of 90 minutes each)",
-			"Road Test appointment",
+			"5 Hour Pre-Licensing Class",
+			"Road test appointment",
 			"Car for road test"
-		]},
-		{id: "sp2", title: "Package #5", popular: false, price: "$240", details: [
-			"1 lesson of 90 minutes",
+		], review: false },
+		{ id: "sp2", title: "Package #6", popular: false, price: "$325", details: [
 			"* For experienced drivers",
-			"Road Test appointment",
-			"Car for road test",
-			"* No pickup (with pickup in the area $255)"
-		]}
+			"1 lesson of 90 minutes",
+			"5 Hour Pre-Licensing Class",
+			"Road test appointment",
+			"Car for road test"
+		], review: true }
 	];
 
 
@@ -98,18 +96,15 @@ function Rates() {
 							<h3 className="pt-serif-bold-italic">Individual Prices</h3>
 						</div>
 						<div className="col-12 col-sm-4 text-center text-sm-start">
-							<p>Single session 45 minutes <span className="pt-serif-bold gold-text fs-5">$50</span></p>
-							<p>Single session 90 minutes <span className="pt-serif-bold gold-text fs-5">$100</span></p>
-							<p className="pb-4 pb-sm-0">5 Hour Class <span className="pt-serif-bold gold-text fs-5">$60</span></p>
+							<p>1 driving lesson (90 minutes) <span className="pt-serif-bold gold-text fs-5">$100</span></p>
+							<p className="pb-4 pb-sm-0">5 Hour Pre-Licensing Class <span className="pt-serif-bold gold-text fs-5">$65</span></p>
 						</div>
 						<div className="col-12 col-sm-4 text-center text-sm-start">
-							<p>Road test appointment <span className="pt-serif-bold gold-text fs-5">$20</span></p>
-							<p>Car rental for for road test <span className="pt-serif-bold gold-text fs-5">$120</span></p>
-							<p className="pb-4 pb-sm-0">Highway lesson (90 minutes) <span className="pt-serif-bold gold-text fs-5">$125</span></p>
+							<p>Road test appointment <span className="pt-serif-bold gold-text fs-5">$30</span></p>
+							<p>Car rental for for road test <span className="pt-serif-bold gold-text fs-5">$150</span></p>
 						</div>
 						<div className="col-12 col-sm-4 text-center text-sm-start">
-							<p>Car rental for Road Test & 45 minute warm-up practice <span className="pt-serif-bold gold-text fs-5">$170</span></p>
-							<p>10 lessions (given in 5 sessions of 90 minutes) & free pickup <span className="pt-serif-bold gold-text fs-5">$500</span></p>
+							<p className="pb-4 pb-sm-0">Highway lesson (90 minutes) <span className="pt-serif-bold gold-text fs-5">$120</span></p>
 						</div>
 					</div>
 				</div>
@@ -122,9 +117,9 @@ function Rates() {
 						</div>
 
 						{ basePackages.map( (bp) =>
-						<div key={bp.id} className="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-							<div className="card h-100">
-								<div className="card-body text-center package">
+						<div key={bp.id} className="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+							<div className="card h-100 package">
+								<div className="card-body text-center">
 									<h3 className="card-title pt-serif-bold rounded-5 p-2">{bp.title}</h3>
 									{ bp.popular &&
 										<small className="rounded-5 p-2 popular-text"><b>Most Popular</b></small>
@@ -148,27 +143,47 @@ function Rates() {
 				<div className="container-1200 m-auto">
 					<div className="row my-4">
 						<div className="col-12 my-4 text-center">
-							<h3 className="pt-serif-bold-italic">Specialized Packages</h3>
+							<h3 className="pt-serif-bold-italic">Specialized Package</h3>
 						</div>
 
 						{ specializedPackages.map( (spz) =>
-						<div key={spz.id} className="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+						<div key={spz.id} className="col-12">
 							<div className="card h-100">
 								<div className="card-body text-center package">
-									<h3 className="card-title pt-serif-bold rounded-5 p-2">{spz.title}</h3>
-									<p className="card-text pt-serif-bold package-price">{spz.price}</p>
-									<ul className="list-unstyled">
-										{ spz.details.map( (d) =>
-											<li key={d.toString()} className="my-2">
-												{ d.includes('*') ? <i>{d}</i> : d }
-											</li>
-										)}
-									</ul>
+									<div className="row">
+										<div className="col-12 col-sm-6">
+											<h3 className="card-title pt-serif-bold rounded-5 p-2">{spz.title}</h3>
+											<p className="card-text pt-serif-bold package-price">{spz.price}</p>
+											<ul className="list-unstyled">
+												{ spz.details.map( (d) =>
+													<li key={d.toString()} className="my-2">
+														{ d.includes('*') ? <i>{d}</i> : d }
+													</li>
+												)}
+											</ul>
+										</div>
+
+										<div className="col-12 col-sm-6 text-center pt-3 pt-sm-0 apply-border">
+											<p className="card-text pt-serif-bold fs-4">IN THESE 10 SESSIONS OF 90 MIN EACH<br />YOU WILL LEARN TO:</p>
+											<ul className="list-unstyled">
+												<li className="my-2">Become familiar with your vehicle (instruments, gauges, etc.)</li>
+												<li className="my-2">Steer (hand over hand)</li>
+												<li className="my-2">Visual tracking</li>
+												<li className="my-2">Acceleration, deceleration, stopping</li>
+												<li className="my-2">Managing visibility, time and space</li>
+												<li className="my-2">Moving away and out of traffic</li>
+												<li className="my-2">Three-point turn</li>
+												<li className="my-2">Parallel parking</li>
+												<li className="my-2">Changing lanes</li>
+												<li className="my-2">Defensive Driving techniques</li>
+												<li className="my-2">How to handle / traffic/ pedestrians/ double parked cars</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 						)}
-
 					</div>
 				</div>
 			</div>
@@ -179,11 +194,11 @@ function Rates() {
 						<div className="col-12 my-4 text-center">
 							<h3 className="pt-serif-bold-italic">Special Packages</h3>
 						</div>
-
+						
 						{ specialPackages.map( (sp) =>
-						<div key={sp.id} className="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-							<div className="card h-100">
-								<div className="card-body text-center package">
+						<div key={sp.id} className="col-12 col-sm-6 mb-4">
+							<div className="card h-100 package">
+								<div className="card-body text-center">
 									<h3 className="card-title pt-serif-bold rounded-5 p-2">{sp.title}</h3>
 									<p className="card-text pt-serif-bold package-price">{sp.price}</p>
 									<ul className="list-unstyled">
@@ -194,6 +209,17 @@ function Rates() {
 										)}
 									</ul>
 								</div>
+								{ sp.review &&
+									<div className="card-footer text-center">
+										<p className="pt-serif-bold m-0">YOU WILL REVIEW:</p>
+										<ul className="list-unstyled">
+											<li className="my-1">Parking techniques</li>
+											<li className="my-1">Three-point turn</li>
+											<li className="my-1">Traffic rules</li>
+											<li className="my-1">Road test tips</li>
+										</ul>
+									</div>
+								}
 							</div>
 						</div>
 						)}

@@ -24,3 +24,14 @@
     color: white;
     background-color: #2A2E34;
 }
+
+.apply-border {
+    border-top: 2px solid gray;
+}
+
+@media (min-width: 576px) {
+    .apply-border {
+        border-top: none;
+        border-left: 2px solid gray;
+    }
+}
