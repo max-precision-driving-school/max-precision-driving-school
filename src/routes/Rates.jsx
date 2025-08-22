@@ -101,7 +101,7 @@ function Rates() {
 						</div>
 						<div className="col-12 col-sm-4 text-center text-sm-start">
 							<p>Road test appointment <span className="pt-serif-bold gold-text fs-5">$30</span></p>
-							<p>Car rental for for road test <span className="pt-serif-bold gold-text fs-5">$150</span></p>
+							<p>Car rental for road test <span className="pt-serif-bold gold-text fs-5">$150</span></p>
 						</div>
 						<div className="col-12 col-sm-4 text-center text-sm-start">
 							<p className="pb-4 pb-sm-0">Highway lesson (90 minutes) <span className="pt-serif-bold gold-text fs-5">$120</span></p>
