@@ -15,8 +15,8 @@ function RefundPolicy() {
                 </div>
             </div>
 
-            <div className="row py-5 mp-dark-bg text-white">
-                <div className="container-1200 py-5 m-auto">
+            <div className="row py-5">
+                <div className="container-1200 pb-5 m-auto">
                     <div className="col-12 pt-serif-regular">
                         <p className="mb-5">To all previous and new students:</p>
                     </div>
@@ -28,7 +28,7 @@ function RefundPolicy() {
                         </p>
                     </div>
 
-                    <div className="col-12 mt-5 py-5">
+                    <div className="col-12 mt-5 pb-5">
                         <h4 className="pt-serif-bold">Refunds</h4>
                         <p className="my-3 pt-serif-regular">
                             Road test appointments and car rentals are non-refundable.

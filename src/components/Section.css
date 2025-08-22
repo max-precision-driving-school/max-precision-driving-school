@@ -7,6 +7,16 @@
     box-shadow: 0 0 50px gold;
 }
 
+.sec-bg .card {
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(71deg, #080509, #2d2c2d, #080509);
+    background-clip: padding-box;
+    border-radius: 45px;
+    padding: 40px;
+    color: #FFF;
+}
+
 .sec-list-item {
     img {
         height: 15px; margin-right: 5px;

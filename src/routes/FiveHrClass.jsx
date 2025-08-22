@@ -30,8 +30,8 @@ function FiveHrClass() {
 								The 5 hour pre-licensing course is a speech/lecture and film that is mandatory to take for first-time license applicants.
 							</h4>
 						</div>
-						<div className="col-12 my-3 d-flex justify-content-center">
-							<img src={carParked} alt="parked cars" className="img-fluid five-hr-image"></img>
+						<div className="col-12 my-3 d-flex justify-content-center img-height">
+							<img src={carParked} alt="parked cars" className="img-fluid five-hr-image" loading="lazy"></img>
 						</div>
 
 					</div>
@@ -45,8 +45,8 @@ function FiveHrClass() {
 								Every non-license applicant must take this course in order to receive a certificate under MV-278, which will be asked for when taking the road test.
 							</p>
 						</div>
-						<div className="col-12 col-sm-6 d-flex justify-content-center">
-							<img src={classroom} alt="classroom" className="img-fluid five-hr-image"></img>
+						<div className="col-12 col-sm-6 d-flex justify-content-center img-height">
+							<img src={classroom} alt="classroom" className="img-fluid five-hr-image" loading="lazy"></img>
 						</div>
 					</div>
 					<div className="row">

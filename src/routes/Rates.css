@@ -29,6 +29,10 @@
     border-top: 2px solid gray;
 }
 
+.img-height {
+    height: 300px;
+}
+
 @media (min-width: 576px) {
     .apply-border {
         border-top: none;
