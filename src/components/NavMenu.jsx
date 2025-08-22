@@ -12,7 +12,7 @@ function NavMenu() {
 	]
 	return (
 		<>
-			<div className="row nav-bg">
+			<div className="row nav-bg sticky-top">
 				<div className="container-1200 m-auto">
 					<nav className="my-3 navbar navbar-expand-lg">
 						<div className="container-fluid">

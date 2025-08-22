@@ -28,7 +28,7 @@ function Rates() {
 			"Road test appointment",
 			"Car for road test"
 		]},
-		
+
 	];
 
 	const specializedPackages = [
@@ -83,7 +83,7 @@ function Rates() {
 							</ul>
 						</div>
 						<div className="col-12 col-md-6 mt-5 mt-md-0 text-center">
-							<img className="img-fluid instructor-img" src={instructorImg} alt="Driving with instructor" />
+							<img className="img-fluid instructor-img img-height" src={instructorImg} alt="Driving with instructor"/>
 						</div>
 					</div>
 				</div>
@@ -194,7 +194,7 @@ function Rates() {
 						<div className="col-12 my-4 text-center">
 							<h3 className="pt-serif-bold-italic">Special Packages</h3>
 						</div>
-						
+
 						{ specialPackages.map( (sp) =>
 						<div key={sp.id} className="col-12 col-sm-6 mb-4">
 							<div className="card h-100 package">
