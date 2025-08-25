@@ -3,6 +3,25 @@
     background-color: #2A2E34;
 }
 
+.rev-bg {
+    color: #FFFFFF;
+    background: linear-gradient(71deg, #080509, #2d2c2d, #080509);
+
+}
+
+.rev-bg .card {
+    position: relative;
+    border: 2px solid transparent;
+    background: #2A2E34;
+    background-clip: padding-box;
+    border-radius: 45px;
+    color: #FFF;
+}
+
+.review-star {
+    height: 20px;
+}
+
 .sec-bg .card:hover {
     box-shadow: 0 0 50px gold;
 }

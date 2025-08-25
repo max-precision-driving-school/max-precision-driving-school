@@ -10,6 +10,11 @@
     height: 50px;
 }
 
+.whatsapp-icon {
+    height: 30px;
+    border-radius: 50%;
+}
+
 .copyright-text {
     font-size: 13px;
     color: #FBE134;

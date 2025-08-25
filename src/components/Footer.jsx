@@ -3,6 +3,7 @@ import location from '../assets/location-dot-solid.svg';
 import phone from '../assets/phone-solid.svg';
 import email from '../assets/envelope-solid.svg';
 import instagram from '../assets/instagram.png';
+import whatsapp from '../assets/whatsapp.jpg';
 
 function Footer() {
     const year = new Date().getFullYear();
@@ -16,10 +17,14 @@ function Footer() {
                                 Max Precision Driving School
                             </p>
                             <p className="mt-2">
-                                Want to learn more?<br />Follow us on instagram!
+                                Want to learn more? <br /> Follow our social media accounts!
                             </p>
-                            <a href="https://www.instagram.com/maxprecisiondrivingschool/">
+                            <a href="https://www.instagram.com/maxprecisiondrivingschool/" target="_blank">
                                 <img className="social-icon" src={instagram}>
+                                </img>
+                            </a>
+                            <a href="https://wa.me/13476085449" target="_blank">
+                                <img className="social-icon whatsapp-icon" src={whatsapp}>
                                 </img>
                             </a>
                         </div>
