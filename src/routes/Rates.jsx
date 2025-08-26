@@ -77,7 +77,7 @@ function Rates() {
 						<div className="col-12 col-md-6">
 							<p className="pt-serif-bold-italic">At Max Precision Driving School</p>
 							<ul className="">
-								<li className="py-2 pt-serif-bold">Classes are available 7 days a week (8AM - 6PM)</li>
+								<li className="py-2 pt-serif-bold">Classes are available 6 days a week (8AM - 6PM)</li>
 								<li className="py-2 pt-serif-bold">Each lesson is 90 minutes</li>
 								<li className="py-2 pt-serif-bold">Highway lessons available</li>
 							</ul>
@@ -105,6 +105,7 @@ function Rates() {
 						</div>
 						<div className="col-12 col-sm-4 text-center text-sm-start">
 							<p className="pb-4 pb-sm-0">Highway lesson (90 minutes) <span className="pt-serif-bold gold-text fs-5">$120</span></p>
+							<p className="pb-4 pb-sm-0">Duplicate MV-278 <span className="pt-serif-bold gold-text fs-5">$30</span></p>
 						</div>
 					</div>
 				</div>
