@@ -23,7 +23,7 @@ function Footer() {
                                 <img className="social-icon" src={instagram}>
                                 </img>
                             </a>
-                            <a href="https://wa.me/13476085449" target="_blank">
+                            <a href="https://wa.me/19177348361" target="_blank">
                                 <img className="social-icon whatsapp-icon" src={whatsapp}>
                                 </img>
                             </a>
