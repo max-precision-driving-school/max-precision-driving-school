@@ -30,7 +30,7 @@ function FiveHrClass() {
 			<div className="row py-4 instructor-image-bg">
 				<div className="container-1200 m-auto">
 					<div className="row">
-						<div className="col-12 col-sm-6 offset-sm-6 p-4 d-flex align-items-center text-bg text-light">
+						<div className="col-12 col-sm-6 offset-sm-6 p-4 d-flex align-items-center text-light text-bg">
 							<p className="pt-serif-regular fs-5">
 								Every non-license applicant must take this course in order to receive a certificate under MV-278, which will be asked for when taking the road test.
 								<br /><br />

@@ -66,7 +66,7 @@ function Rates() {
 			<div className="row py-4">
 				<div className="container-1200 m-auto">
 					<div className="col-12">
-						<h2 className="my-2">Lessons & Rates</h2>
+						<h2 className="my-2 pt-serif-bold text-center">Lessons & Rates</h2>
 					</div>
 				</div>
 			</div>
@@ -118,7 +118,7 @@ function Rates() {
 
 						{ basePackages.map( (bp) =>
 						<div key={bp.id} className="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-							<div className="card h-100 package">
+							<div className="card card-hover-effect h-100 package">
 								<div className="card-body text-center">
 									<h3 className="card-title pt-serif-bold rounded-5 p-2">{bp.title}</h3>
 									{ bp.popular &&
@@ -148,7 +148,7 @@ function Rates() {
 
 						{ specializedPackages.map( (spz) =>
 						<div key={spz.id} className="col-12">
-							<div className="card h-100">
+							<div className="card card-hover-effect h-100">
 								<div className="card-body text-center package">
 									<div className="row">
 										<div className="col-12 col-sm-6">
@@ -197,7 +197,7 @@ function Rates() {
 
 						{ specialPackages.map( (sp) =>
 						<div key={sp.id} className="col-12 col-sm-6 mb-4">
-							<div className="card h-100 package">
+							<div className="card card-hover-effect h-100 package">
 								<div className="card-body text-center">
 									<h3 className="card-title pt-serif-bold rounded-5 p-2">{sp.title}</h3>
 									<p className="card-text pt-serif-bold package-price">{sp.price}</p>

@@ -56,3 +56,7 @@ a {
 .mp-dark-bg {
   background-color: #2A2E34;
 }
+
+.card-hover-effect:hover {
+    box-shadow: 0 0 50px gold;
+}
