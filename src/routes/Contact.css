@@ -4,7 +4,7 @@
     color: #000000;
 }
 
-.contact-bg > div {
+.contact-bg .form-bg {
     background-color: #FFFFFF;
     background: rgba(204, 204, 204, 0.8);
 }
