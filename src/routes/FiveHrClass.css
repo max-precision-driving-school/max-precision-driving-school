@@ -13,7 +13,7 @@
     background-color: antiquewhite;
     background-image: url('/src/assets/classroom.jpg');
     background-size: cover;
-    background-position: center right;
+    background-position: center 28%;
     height: 500px;
 }
 
