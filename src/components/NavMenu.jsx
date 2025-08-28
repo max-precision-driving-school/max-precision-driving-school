@@ -1,6 +1,5 @@
 import './NavMenu.css';
 import NavItem from "./NavItem";
-// import NavLogo from '../assets/maxplogo-v2-1.png';
 import NavLogo from '../assets/maxplogo-v2.png';
 
 function NavMenu() {
@@ -12,7 +11,7 @@ function NavMenu() {
 	]
 	return (
 		<>
-			<div className="row nav-bg">
+			<div className="row nav-bg sticky-top">
 				<div className="container-1200 m-auto">
 					<nav className="my-3 navbar navbar-expand-lg">
 						<div className="container-fluid">

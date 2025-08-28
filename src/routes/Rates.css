@@ -9,10 +9,6 @@
     font-size: 3rem;
 }
 
-.package:hover {
-    box-shadow: 0 0 50px rgb(255,215,0);
-}
-
 .instructor-img { max-height: 300px; }
 .popular-text {
     color: gold;
@@ -22,11 +18,25 @@
 
 .specialized {
     color: white;
-    background-color: #2A2E34;
+    background-color: #6c757d;
 }
 
 .apply-border {
     border-top: 2px solid gray;
+}
+
+.img-height {
+    height: 300px;
+}
+
+.card {
+    position: relative;
+    border: 2px solid transparent;
+    /* background: #2A2E34; */
+    background-clip: padding-box;
+    border-radius: 45px;
+    color: #FFF;
+    background: linear-gradient(71deg, #080509, #2d2c2d, #080509);
 }
 
 @media (min-width: 576px) {

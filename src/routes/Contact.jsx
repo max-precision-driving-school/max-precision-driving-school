@@ -38,16 +38,12 @@ function Contact() {
 				title="Contact Us | Max Precision Driving School "
 				description="Let us help you drive with confidence and max precision."
 			/>
-			<div className="row py-4">
-				<div className="container-1200 m-auto">
-					<div className="col-12">
-						<h2 className="my-2">Contact</h2>
-					</div>
-				</div>
-			</div>
-
 			<div className="row contact-bg py-5">
-				<div className="rounded col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 py-3">
+				<div className="col-12">
+					<h2 className="mb-5 text-light text-center pt-serif-bold">Contact</h2>
+				</div>
+
+				<div className="rounded col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 py-3 form-bg">
 					<p className="fw-bold">Don't hesitate to reach out for any questions or concerns
 						<small className="d-block text-danger">* Indicates required field</small>
 					</p>
@@ -146,7 +142,7 @@ function Contact() {
 							)
 						}
 				</div>
-				<div className="mt-4 py-3 rounded col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+				<div className="mt-4 py-3 rounded col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 form-bg">
 					<div>
 						<h3 className="mb-3">Our Office</h3>
 						<p>Accessible by <span className="mta"><strong>N</strong></span> <span className="mta"><strong>W</strong></span> trains - Astoria-Ditmars Blvd Station</p>

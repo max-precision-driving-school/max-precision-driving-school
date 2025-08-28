@@ -28,7 +28,7 @@ function Rates() {
 			"Road test appointment",
 			"Car for road test"
 		]},
-		
+
 	];
 
 	const specializedPackages = [
@@ -66,7 +66,7 @@ function Rates() {
 			<div className="row py-4">
 				<div className="container-1200 m-auto">
 					<div className="col-12">
-						<h2 className="my-2">Lessons & Rates</h2>
+						<h2 className="my-2 pt-serif-bold text-center">Lessons & Rates</h2>
 					</div>
 				</div>
 			</div>
@@ -77,13 +77,13 @@ function Rates() {
 						<div className="col-12 col-md-6">
 							<p className="pt-serif-bold-italic">At Max Precision Driving School</p>
 							<ul className="">
-								<li className="py-2 pt-serif-bold">Classes are available 7 days a week (8AM - 6PM)</li>
+								<li className="py-2 pt-serif-bold">Classes are available 6 days a week (8AM - 6PM)</li>
 								<li className="py-2 pt-serif-bold">Each lesson is 90 minutes</li>
 								<li className="py-2 pt-serif-bold">Highway lessons available</li>
 							</ul>
 						</div>
 						<div className="col-12 col-md-6 mt-5 mt-md-0 text-center">
-							<img className="img-fluid instructor-img" src={instructorImg} alt="Driving with instructor" />
+							<img className="img-fluid instructor-img img-height" src={instructorImg} alt="Driving with instructor"/>
 						</div>
 					</div>
 				</div>
@@ -101,10 +101,11 @@ function Rates() {
 						</div>
 						<div className="col-12 col-sm-4 text-center text-sm-start">
 							<p>Road test appointment <span className="pt-serif-bold gold-text fs-5">$30</span></p>
-							<p>Car rental for for road test <span className="pt-serif-bold gold-text fs-5">$150</span></p>
+							<p className="pb-4 pb-sm-0">Car rental for road test <span className="pt-serif-bold gold-text fs-5">$150</span></p>
 						</div>
 						<div className="col-12 col-sm-4 text-center text-sm-start">
-							<p className="pb-4 pb-sm-0">Highway lesson (90 minutes) <span className="pt-serif-bold gold-text fs-5">$120</span></p>
+							<p className="">Highway lesson (90 minutes) <span className="pt-serif-bold gold-text fs-5">$120</span></p>
+							<p className="pb-4 pb-sm-0">Duplicate MV-278 <span className="pt-serif-bold gold-text fs-5">$30</span></p>
 						</div>
 					</div>
 				</div>
@@ -118,7 +119,7 @@ function Rates() {
 
 						{ basePackages.map( (bp) =>
 						<div key={bp.id} className="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-							<div className="card h-100 package">
+							<div className="card card-hover-effect h-100 package">
 								<div className="card-body text-center">
 									<h3 className="card-title pt-serif-bold rounded-5 p-2">{bp.title}</h3>
 									{ bp.popular &&
@@ -148,7 +149,7 @@ function Rates() {
 
 						{ specializedPackages.map( (spz) =>
 						<div key={spz.id} className="col-12">
-							<div className="card h-100">
+							<div className="card card-hover-effect h-100">
 								<div className="card-body text-center package">
 									<div className="row">
 										<div className="col-12 col-sm-6">
@@ -194,10 +195,10 @@ function Rates() {
 						<div className="col-12 my-4 text-center">
 							<h3 className="pt-serif-bold-italic">Special Packages</h3>
 						</div>
-						
+
 						{ specialPackages.map( (sp) =>
 						<div key={sp.id} className="col-12 col-sm-6 mb-4">
-							<div className="card h-100 package">
+							<div className="card card-hover-effect h-100 package">
 								<div className="card-body text-center">
 									<h3 className="card-title pt-serif-bold rounded-5 p-2">{sp.title}</h3>
 									<p className="card-text pt-serif-bold package-price">{sp.price}</p>

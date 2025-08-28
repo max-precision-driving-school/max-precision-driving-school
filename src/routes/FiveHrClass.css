@@ -1,3 +1,27 @@
 .five-hr-image {
     max-height: 450px;
 }
+
+.five-hr-image-bg {
+    background-color: #404749;
+    background-image: url('/src/assets/5hr-v3.jpeg');
+    background-position: center center;
+    height: 500px;
+}
+
+.instructor-image-bg {
+    background-color: antiquewhite;
+    background-image: url('/src/assets/classroom.jpg');
+    background-size: cover;
+    background-position: center 28%;
+    height: 500px;
+}
+
+.text-bg {
+    background-color:#404749;
+    opacity: 0.7;
+}
+
+.img-height {
+    height: 450px;
+}
